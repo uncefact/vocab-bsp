@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:basisPeriodMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:PaymentDiscountTerms"
+                },
+                {
+                    "@id": "unece:PaymentPenaltyTerms"
+                }
+            ],
+            "rdfs:comment": [
+                "The measure of the basis period for these trade payment discount terms.",
+                "The measure of the period used as a basis to calculate these trade payment penalty terms."
+            ],
+            "rdfs:label": "basisPeriodMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentDiscountTerms.BasisPeriod.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004619",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentDiscountTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the basis period for these trade payment discount terms."
+                },
+                {
+                    "@id": "cefact:Trade_PaymentPenaltyTerms.BasisPeriod.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004628",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentPenaltyTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the period used as a basis to calculate these trade payment penalty terms."
+                }
+            ]
+        }
+    ]
+}

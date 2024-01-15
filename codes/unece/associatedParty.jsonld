@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:associatedParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A party associated with this trade party, such as a local agent of a shipping line.",
+                "A trade party associated with this supply chain consignment."
+            ],
+            "rdfs:label": "associatedParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Associated.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004609",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A party associated with this trade party, such as a local agent of a shipping line."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Associated.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004901",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Cross-Border",
+                    "rdfs:comment": "A trade party associated with this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

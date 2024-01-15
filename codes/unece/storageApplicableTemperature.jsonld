@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:storageApplicableTemperature",
+            "schema:rangeIncludes": {
+                "@id": "unece:InstructedTemperature"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:HandlingInstructions"
+            },
+            "rdfs:comment": "The instructed temperature for storage applicable to these handling instructions.",
+            "rdfs:label": "storageApplicableTemperature",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Handling_Instructions.Storage_Applicable.Instructed_Temperature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008435",
+                    "unece:cefactBieDomainClass": "cefact:Handling_Instructions.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The instructed temperature for storage applicable to these handling instructions."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:acquisitionDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GeographicalCoordinate"
+                },
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                }
+            ],
+            "rdfs:comment": [
+                "The date, time, date time or other date time value of the acquisition of this geographical coordinate.",
+                "The date, time, date time, or other date time value of an acquisition for this cross-border regulatory procedure."
+            ],
+            "rdfs:label": "acquisitionDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:GeographicalCoordinate.Acquisition.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013611",
+                    "unece:cefactBieDomainClass": "cefact:GeographicalCoordinate.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
+                },
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Acquisition.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01006174",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time, or other date time value of an acquisition for this cross-border regulatory procedure."
+                }
+            ]
+        }
+    ]
+}

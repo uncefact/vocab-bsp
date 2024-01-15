@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Schedule",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A series of planned activities or things to be done showing the times or dates when they are intended to happen or be done.",
+            "rdfs:label": "Schedule",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Schedule.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012978",
+                    "rdfs:comment": "A series of planned activities or things to be done in this supply chain.",
+                    "unece:cefactBusinessProcess": "Supply Chain"
+                }
+            ]
+        }
+    ]
+}

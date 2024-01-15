@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualComplexDescription",
+            "schema:rangeIncludes": {
+                "@id": "unece:ComplexDescription"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:WorkItem"
+            },
+            "rdfs:comment": [
+                "An actual complex description for this basic work item.",
+                "An actual complex description for this work item group."
+            ],
+            "rdfs:label": "actualComplexDescription",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Grouped_WorkItem.Actual.WorkItem_ComplexDescription",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007515",
+                    "unece:cefactBieDomainClass": "cefact:Grouped_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An actual complex description for this work item group."
+                },
+                {
+                    "@id": "cefact:Basic_WorkItem.Actual.WorkItem_ComplexDescription",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000038",
+                    "unece:cefactBieDomainClass": "cefact:Basic_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An actual complex description for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Keyword",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A significant word, part of word or phrase that is used to enable indexing of or searching within a textual repository, such as a product catalogue or library.",
+            "rdfs:label": "Keyword",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Keyword.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01007299",
+                    "rdfs:comment": "A significant word, part of word or phrase that is used to enable indexing of or searching within a textual repository, such as a product catalogue or library.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualQuantityDimension",
+            "schema:rangeIncludes": {
+                "@id": "unece:Dimension"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:QuantityAnalysis"
+            },
+            "rdfs:comment": "A work item dimension of the actual quantity in this work item quantity analysis.",
+            "rdfs:label": "actualQuantityDimension",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_QuantityAnalysis.ActualQuantity.WorkItem_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000024",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_QuantityAnalysis.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:value",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Characteristic"
+                },
+                {
+                    "@id": "unece:ControlSettingParameter"
+                },
+                {
+                    "@id": "unece:DocumentContextParameter"
+                },
+                {
+                    "@id": "unece:OperationalParameter"
+                }
+            ],
+            "rdfs:comment": [
+                "A value, expressed as text, for this product characteristic.",
+                "The value, expressed as text, of this control setting parameter.",
+                "The value, expressed as text, of this document context parameter.",
+                "The value, expressed as text, of this operational parameter."
+            ],
+            "rdfs:label": "value",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ControlSetting_Parameter.Value.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013509",
+                    "unece:cefactBieDomainClass": "cefact:ControlSetting_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The value, expressed as text, of this control setting parameter."
+                },
+                {
+                    "@id": "cefact:DocumentContext_Parameter.Value.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004854",
+                    "unece:cefactBieDomainClass": "cefact:DocumentContext_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The value, expressed as text, of this document context parameter."
+                },
+                {
+                    "@id": "cefact:Product_Characteristic.Value.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7110",
+                    "unece:cefactUNId": "UN01004900",
+                    "unece:cefactBieDomainClass": "cefact:Product_Characteristic.Details",
+                    "unece:cefactBusinessProcess": "Cross-Border",
+                    "rdfs:comment": "A value, expressed as text, for this product characteristic."
+                },
+                {
+                    "@id": "cefact:Operational_Parameter.Value.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013520",
+                    "unece:cefactBieDomainClass": "cefact:Operational_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The value, expressed as text, of this operational parameter."
+                }
+            ]
+        }
+    ]
+}

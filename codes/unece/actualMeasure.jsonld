@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Measurement"
+            },
+            "rdfs:comment": "An actual measure for this measurement.",
+            "rdfs:label": "actualMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Measurement.Actual.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6314",
+                    "unece:cefactUNId": "UN01003892",
+                    "unece:cefactBieDomainClass": "cefact:Measurement.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An actual measure for this measurement."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TaxRegistration",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Registration with a specific tax authority.",
+            "rdfs:label": "TaxRegistration",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Tax_Registration.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004486",
+                    "rdfs:comment": "Registration with a specific tax authority.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

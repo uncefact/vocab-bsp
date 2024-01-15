@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedConsignment",
+            "schema:rangeIncludes": {
+                "@id": "unece:Consignment"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Consignment"
+            },
+            "rdfs:comment": "A referenced consignment included in this supply chain consignment.",
+            "rdfs:label": "includedConsignment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Included.Referenced_SupplyChain_Consignment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004259",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A referenced consignment included in this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportPackage",
+            "schema:rangeIncludes": {
+                "@id": "unece:Package"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                }
+            ],
+            "rdfs:comment": [
+                "A transport package for this referenced supply chain consignment item.",
+                "A transport package for this supply chain consignment item.",
+                "Transport packages for this referenced supply chain consignment.",
+                "Transport packages for this supply chain consignment."
+            ],
+            "rdfs:label": "transportPackage",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.Transport.Logistics_Package",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011061",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Transport packages for this referenced supply chain consignment."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Transport.Logistics_Package",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004290",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Transport packages for this supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Referenced_SupplyChain_ConsignmentItem.Transport.Logistics_Package",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011043",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport package for this referenced supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Transport.Logistics_Package",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004152",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport package for this supply chain consignment item."
+                }
+            ]
+        }
+    ]
+}

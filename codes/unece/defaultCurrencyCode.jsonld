@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:defaultCurrencyCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:BreakdownStatement"
+            },
+            "rdfs:comment": "The code specifying the default currency for this valuation breakdown statement.",
+            "rdfs:label": "defaultCurrencyCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Valuation_BreakdownStatement.Default_Currency.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6345",
+                    "unece:cefactUNId": "UN01007551",
+                    "unece:cefactBieDomainClass": "cefact:Valuation_BreakdownStatement.Details",
+                    "unece:cefactBusinessProcess": "Invoicing",
+                    "rdfs:comment": "The code specifying the default currency for this valuation breakdown statement."
+                }
+            ]
+        }
+    ]
+}

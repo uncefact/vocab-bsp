@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:LocationParty",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An individual, a group, or a body having a role related to a location.",
+            "rdfs:label": "LocationParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Location_Party.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003661",
+                    "rdfs:comment": "An individual, a group, or a body having a role related to a location.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

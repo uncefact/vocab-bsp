@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedTradeDelivery",
+            "schema:rangeIncludes": {
+                "@id": "unece:LineTradeDelivery"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeLineItem"
+            },
+            "rdfs:comment": [
+                "The delivery specified for this subordinate trade line item.",
+                "The line trade delivery specified for this supply chain trade line item."
+            ],
+            "rdfs:label": "specifiedTradeDelivery",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Subordinate_TradeLineItem.Specified.SubordinateLine_TradeDelivery",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011857",
+                    "unece:cefactBieDomainClass": "cefact:Subordinate_TradeLineItem.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The delivery specified for this subordinate trade line item."
+                },
+                {
+                    "@id": "cefact:SupplyChain_TradeLineItem.Specified.Line_TradeDelivery",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011863",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeLineItem.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The line trade delivery specified for this supply chain trade line item."
+                }
+            ]
+        }
+    ]
+}

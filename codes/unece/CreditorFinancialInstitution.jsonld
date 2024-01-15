@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:CreditorFinancialInstitution",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money.",
+            "rdfs:label": "CreditorFinancialInstitution",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Creditor_FinancialInstitution.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002975",
+                    "rdfs:comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money.",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation"
+                }
+            ]
+        }
+    ]
+}

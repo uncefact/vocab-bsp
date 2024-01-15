@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportEquipmentCategoryCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL8053Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AttachedTransportEquipment"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying a category of this piece of attached transport equipment.",
+                "The code specifying the category for this piece of logistics transport equipment, such as container or trailer.",
+                "The code specifying the category of this referenced piece of logistics transport equipment."
+            ],
+            "rdfs:label": "transportEquipmentCategoryCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Attached_TransportEquipment.Category.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8053",
+                    "unece:cefactUNId": "UN01003418",
+                    "unece:cefactBieDomainClass": "cefact:Attached_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying a category of this piece of attached transport equipment."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Category.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8053",
+                    "unece:cefactUNId": "UN01003767",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the category for this piece of logistics transport equipment, such as container or trailer."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.Category.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8053",
+                    "unece:cefactUNId": "UN01004024",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the category of this referenced piece of logistics transport equipment."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:LogisticsLocation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A logistics related physical location or place.",
+            "rdfs:label": "LogisticsLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Location.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003679",
+                    "rdfs:comment": "A logistics related physical location or place.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

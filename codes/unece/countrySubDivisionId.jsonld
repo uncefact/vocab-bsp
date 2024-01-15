@@ -1,0 +1,84 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:countrySubDivisionId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancialInstitutionAddress"
+                },
+                {
+                    "@id": "unece:GovernmentRegistration"
+                },
+                {
+                    "@id": "unece:LogisticsLocation"
+                },
+                {
+                    "@id": "unece:TradeAddress"
+                }
+            ],
+            "rdfs:comment": [
+                "A unique identifier of the country sub-division for this trade address.",
+                "The identifier of the country sub-division for this logistics related location.",
+                "The identifier of the country sub-division for this registration.",
+                "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
+            ],
+            "rdfs:label": "countrySubDivisionId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancialInstitution_Address.CountrySub-Division.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3229",
+                    "unece:cefactUNId": "UN01003184",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
+                },
+                {
+                    "@id": "cefact:Logistics_Location.CountrySub-Division.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013369",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Location.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The identifier of the country sub-division for this logistics related location."
+                },
+                {
+                    "@id": "cefact:Trade_Address.CountrySub-Division.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3229",
+                    "unece:cefactUNId": "UN01004548",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Address.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A unique identifier of the country sub-division for this trade address."
+                },
+                {
+                    "@id": "cefact:Government_Registration.CountrySub-Division.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011037",
+                    "unece:cefactBieDomainClass": "cefact:Government_Registration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The identifier of the country sub-division for this registration."
+                }
+            ]
+        }
+    ]
+}

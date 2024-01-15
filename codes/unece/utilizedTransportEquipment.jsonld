@@ -1,0 +1,66 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:utilizedTransportEquipment",
+            "schema:rangeIncludes": {
+                "@id": "unece:LogisticsTransportEquipment"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "A piece of logistics transport equipment, at line level, utilized for this trade delivery.",
+                "Logistics transport equipment utilized for this referenced supply chain consignment.",
+                "Logistics transport equipment utilized for this supply chain consignment."
+            ],
+            "rdfs:label": "utilizedTransportEquipment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.Utilized.Logistics_TransportEquipment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011067",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Logistics transport equipment utilized for this referenced supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.Utilized.Referenced_Logistics_TransportEquipment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012126",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A piece of logistics transport equipment, at line level, utilized for this trade delivery."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Utilized.Logistics_TransportEquipment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004260",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Logistics transport equipment utilized for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

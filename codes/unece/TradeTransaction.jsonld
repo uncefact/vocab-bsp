@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TradeTransaction",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties.",
+            "rdfs:label": "TradeTransaction",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeTransaction.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01011824",
+                    "rdfs:comment": "A group of trade line items, trade line agreement, trade line delivery and trade line settlement details.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                },
+                {
+                    "@id": "cefact:SupplyChain_TradeTransaction.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004475",
+                    "rdfs:comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

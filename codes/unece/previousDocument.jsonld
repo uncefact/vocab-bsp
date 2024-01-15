@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:previousDocument",
+            "schema:rangeIncludes": {
+                "@id": "unece:Document"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Declaration"
+                },
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                }
+            ],
+            "rdfs:comment": [
+                "A previous document referenced for this exchanged declaration.",
+                "A previous document related to this cross-border regulatory procedure."
+            ],
+            "rdfs:label": "previousDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Declaration.Previous.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011024",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Declaration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A previous document referenced for this exchanged declaration."
+                },
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Previous.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006175",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A previous document related to this cross-border regulatory procedure."
+                }
+            ]
+        }
+    ]
+}

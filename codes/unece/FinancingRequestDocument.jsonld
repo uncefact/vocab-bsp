@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:FinancingRequestDocument",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
+            "rdfs:label": "FinancingRequestDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancingRequest_Document.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013228",
+                    "rdfs:comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

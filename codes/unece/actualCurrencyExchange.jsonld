@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualCurrencyExchange",
+            "schema:rangeIncludes": {
+                "@id": "unece:CurrencyExchange"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AllowanceCharge"
+            },
+            "rdfs:comment": "The actual trade currency exchange for this trade allowance charge.",
+            "rdfs:label": "actualCurrencyExchange",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Actual.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004885",
+                    "unece:cefactBieDomainClass": "cefact:Trade_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual trade currency exchange for this trade allowance charge."
+                }
+            ]
+        }
+    ]
+}

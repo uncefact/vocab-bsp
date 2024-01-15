@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Fault",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A defect or logical grouping of defects that appear to be related or are showing the same symptoms.",
+            "rdfs:label": "Fault",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Identified_Fault.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010065",
+                    "rdfs:comment": "An identified defect or fault.",
+                    "unece:cefactBusinessProcess": "Transport"
+                }
+            ]
+        }
+    ]
+}

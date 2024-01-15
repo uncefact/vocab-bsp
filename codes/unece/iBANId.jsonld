@@ -1,0 +1,73 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:iBANId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:CreditorFinancialAccount"
+                },
+                {
+                    "@id": "unece:DebtorFinancialAccount"
+                },
+                {
+                    "@id": "unece:FinancingFinancialAccount"
+                }
+            ],
+            "rdfs:comment": [
+                "The unique International Bank Account Number (IBAN) identifier for this creditor financial account.",
+                "The unique International Bank Account Number (IBAN) identifier for this debtor financial account.",
+                "The unique International Bank Account Number (IBAN) identifier for this financing financial account."
+            ],
+            "rdfs:label": "iBANId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Financing_FinancialAccount.IBAN_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3492",
+                    "unece:cefactUNId": "UN01013254",
+                    "unece:cefactBieDomainClass": "cefact:Financing_FinancialAccount.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unique International Bank Account Number (IBAN) identifier for this financing financial account."
+                },
+                {
+                    "@id": "cefact:Debtor_FinancialAccount.IBAN_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3492",
+                    "unece:cefactUNId": "UN01003285",
+                    "unece:cefactBieDomainClass": "cefact:Debtor_FinancialAccount.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The unique International Bank Account Number (IBAN) identifier for this debtor financial account."
+                },
+                {
+                    "@id": "cefact:Creditor_FinancialAccount.IBAN_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3492",
+                    "unece:cefactUNId": "UN01003348",
+                    "unece:cefactBieDomainClass": "cefact:Creditor_FinancialAccount.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
+                }
+            ]
+        }
+    ]
+}

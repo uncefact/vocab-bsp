@@ -1,0 +1,70 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:returnableIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:Package"
+                },
+                {
+                    "@id": "unece:Packaging"
+                }
+            ],
+            "rdfs:comment": [
+                "The indication of whether or not this logistics package is returnable.",
+                "The indication of whether or not this piece of logistics transport equipment is returnable.",
+                "The indication of whether or not this supply chain packaging is returnable."
+            ],
+            "rdfs:label": "returnableIndicator",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Packaging.Returnable.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01006751",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Packaging.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication of whether or not this supply chain packaging is returnable."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Returnable.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012583",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication of whether or not this piece of logistics transport equipment is returnable."
+                },
+                {
+                    "@id": "cefact:Logistics_Package.Returnable.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012566",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication of whether or not this logistics package is returnable."
+                }
+            ]
+        }
+    ]
+}

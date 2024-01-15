@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:authorizedRegistration",
+            "schema:rangeIncludes": {
+                "@id": "unece:LegalRegistration"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Organization"
+            },
+            "rdfs:comment": "A legal registration authorized for this legally set up organization.",
+            "rdfs:label": "authorizedRegistration",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Legal_Organization.Authorized.Legal_Registration",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003647",
+                    "unece:cefactBieDomainClass": "cefact:Legal_Organization.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A legal registration authorized for this legally set up organization."
+                }
+            ]
+        }
+    ]
+}

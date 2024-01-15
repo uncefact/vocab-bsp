@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Context",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A set of circumstances that form the setting for an object, situation, event, statement, or idea.",
+            "rdfs:label": "Context",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ExchangedDocument_Context.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003540",
+                    "rdfs:comment": "The scenario or setting of an exchanged document, such as its business process application context.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

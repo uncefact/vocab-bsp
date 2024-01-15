@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:signatoryAuthentication",
+            "schema:rangeIncludes": {
+                "@id": "unece:Authentication"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                }
+            ],
+            "rdfs:comment": [
+                "A signatory authentication for this referenced document.",
+                "A signatory document authentication for this exchanged document."
+            ],
+            "rdfs:label": "signatoryAuthentication",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Signatory.Document_Authentication",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002499",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A signatory document authentication for this exchanged document."
+                },
+                {
+                    "@id": "cefact:Referenced_Document.Signatory.Document_Authentication",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004021",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A signatory authentication for this referenced document."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:itemQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Package"
+            },
+            "rdfs:comment": [
+                "The number of logistics packages at this level.",
+                "The number of referenced logistics packages at this level."
+            ],
+            "rdfs:label": "itemQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Package.Item.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7224",
+                    "unece:cefactUNId": "UN01003690",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of logistics packages at this level."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_Package.Item.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7224",
+                    "unece:cefactUNId": "UN01006791",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of referenced logistics packages at this level."
+                }
+            ]
+        }
+    ]
+}

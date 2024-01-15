@@ -1,0 +1,91 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Adjustment"
+                },
+                {
+                    "@id": "unece:ProductInstance"
+                },
+                {
+                    "@id": "unece:QuantityAnalysis"
+                },
+                {
+                    "@id": "unece:SupplyPlan"
+                }
+            ],
+            "rdfs:comment": [
+                "The actual quantity added or subtracted as a result of this delivery adjustment.",
+                "The actual quantity added or subtracted as a result of this financial adjustment.",
+                "The actual quantity for this work item quantity analysis.",
+                "The actual quantity in this supply chain supply plan.",
+                "The actual quantity of items in this trade product instance."
+            ],
+            "rdfs:label": "actualQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_QuantityAnalysis.Actual.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000017",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_QuantityAnalysis.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The actual quantity for this work item quantity analysis."
+                },
+                {
+                    "@id": "cefact:Financial_Adjustment.Actual.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003598",
+                    "unece:cefactBieDomainClass": "cefact:Financial_Adjustment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The actual quantity added or subtracted as a result of this financial adjustment."
+                },
+                {
+                    "@id": "cefact:Trade_ProductInstance.Actual.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004661",
+                    "unece:cefactBieDomainClass": "cefact:Trade_ProductInstance.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual quantity of items in this trade product instance."
+                },
+                {
+                    "@id": "cefact:SupplyChain_SupplyPlan.Actual.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004327",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_SupplyPlan.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual quantity in this supply chain supply plan."
+                },
+                {
+                    "@id": "cefact:Delivery_Adjustment.Actual.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003502",
+                    "unece:cefactBieDomainClass": "cefact:Delivery_Adjustment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
+                }
+            ]
+        }
+    ]
+}

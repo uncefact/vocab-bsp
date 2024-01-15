@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:AllowanceCharge",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A component of pricing, such as a service, promotion, allowance or charge.",
+            "rdfs:label": "AllowanceCharge",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01001631",
+                    "rdfs:comment": "A component of pricing, such as an allowance or charge for trade purposes.",
+                    "unece:cefactBusinessProcess": "Trade"
+                },
+                {
+                    "@id": "cefact:Applied_AllowanceCharge.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01000188",
+                    "rdfs:comment": "The applied allowance or charge component of pricing.",
+                    "unece:cefactBusinessProcess": "Pricing"
+                }
+            ]
+        }
+    ]
+}

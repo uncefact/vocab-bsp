@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:nominalGrossWeightMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Package"
+            },
+            "rdfs:comment": [
+                "The measure of the nominal gross weight (mass) of this logistics package and its contents.",
+                "The measure of the nominal gross weight (mass) of this referenced logistics package and its contents."
+            ],
+            "rdfs:label": "nominalGrossWeightMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Package.Nominal_GrossWeight.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6022",
+                    "unece:cefactUNId": "UN01003692",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_Package.Nominal_GrossWeight.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6022",
+                    "unece:cefactUNId": "UN01013100",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the nominal gross weight (mass) of this referenced logistics package and its contents."
+                }
+            ]
+        }
+    ]
+}

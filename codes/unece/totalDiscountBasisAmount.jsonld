@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:totalDiscountBasisAmount",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeSettlementHeaderMonetarySummation"
+            },
+            "rdfs:comment": "A monetary value of a total discount basis reported in this trade settlement header monetary summation.",
+            "rdfs:label": "totalDiscountBasisAmount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementHeader_MonetarySummation.TotalDiscountBasis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011885",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementHeader_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Remittance",
+                    "rdfs:comment": "A monetary value of a total discount basis reported in this trade settlement header monetary summation."
+                }
+            ]
+        }
+    ]
+}

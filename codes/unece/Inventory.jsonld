@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Inventory",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Material held in stock.",
+            "rdfs:label": "Inventory",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Inventory.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004305",
+                    "rdfs:comment": "Supply chain goods and materials held in stock.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                },
+                {
+                    "@id": "cefact:StoresItem_Inventory.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013189",
+                    "rdfs:comment": "A stores item, such as for onboard use during a journey.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

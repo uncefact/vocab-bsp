@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:sealConditionCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4517Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Seal"
+            },
+            "rdfs:comment": "A code specifying a condition of this logistics seal.",
+            "rdfs:label": "sealConditionCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Seal.Condition.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4517",
+                    "unece:cefactUNId": "UN01003717",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Seal.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying a condition of this logistics seal."
+                }
+            ]
+        }
+    ]
+}

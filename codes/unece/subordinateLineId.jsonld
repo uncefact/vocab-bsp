@@ -1,0 +1,59 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:subordinateLineId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:DocumentLineDocument"
+                }
+            ],
+            "rdfs:comment": [
+                "An identifier of a subordinate line of this document line.",
+                "The identifier of the subordinate line of this referenced document."
+            ],
+            "rdfs:label": "subordinateLineId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Document.SubordinateLine.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012962",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The identifier of the subordinate line of this referenced document."
+                },
+                {
+                    "@id": "cefact:DocumentLine_Document.SubordinateLine.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1156",
+                    "unece:cefactUNId": "UN01013361",
+                    "unece:cefactBieDomainClass": "cefact:DocumentLine_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An identifier of a subordinate line of this document line."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:originCountry",
+            "schema:rangeIncludes": {
+                "@id": "unece:Country"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:Product"
+                }
+            ],
+            "rdfs:comment": [
+                "A country of origin for this supply chain consignment.",
+                "A country of origin for this trade product.",
+                "The country of origin where this supply chain consignment item has been produced."
+            ],
+            "rdfs:label": "originCountry",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Origin.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004703",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A country of origin for this trade product."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Origin.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004139",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The country of origin where this supply chain consignment item has been produced."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Origin.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004268",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A country of origin for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

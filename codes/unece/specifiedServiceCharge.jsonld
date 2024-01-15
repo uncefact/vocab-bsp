@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedServiceCharge",
+            "schema:rangeIncludes": {
+                "@id": "unece:ServiceCharge"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeSettlement"
+                },
+                {
+                    "@id": "unece:LineTradeSettlement"
+                }
+            ],
+            "rdfs:comment": [
+                "A logistics service charge specified for this header trade settlement.",
+                "A logistics service charge specified for this line trade settlement."
+            ],
+            "rdfs:label": "specifiedServiceCharge",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeSettlement.Specified.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011810",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics service charge specified for this line trade settlement."
+                },
+                {
+                    "@id": "cefact:Header_TradeSettlement.Specified.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011676",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics service charge specified for this header trade settlement."
+                }
+            ]
+        }
+    ]
+}

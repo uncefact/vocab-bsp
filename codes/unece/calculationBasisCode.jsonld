@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:calculationBasisCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ServiceCharge"
+            },
+            "rdfs:comment": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit.",
+            "rdfs:label": "calculationBasisCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_ServiceCharge.CalculationBasis.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6131",
+                    "unece:cefactUNId": "UN01003733",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_ServiceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:BirthAddress",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The place of birth.",
+            "rdfs:label": "BirthAddress",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Birth_Address.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003169",
+                    "rdfs:comment": "The place of birth.",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation"
+                }
+            ]
+        }
+    ]
+}

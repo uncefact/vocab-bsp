@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:SubordinateLineTradeDelivery",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery.",
+            "rdfs:label": "SubordinateLineTradeDelivery",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SubordinateLine_TradeDelivery.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01011849",
+                    "rdfs:comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

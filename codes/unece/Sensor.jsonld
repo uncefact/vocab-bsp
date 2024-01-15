@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Sensor",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
+            "rdfs:label": "Sensor",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Monitoring_Sensor.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013539",
+                    "rdfs:comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:financialInstitutionAddressTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL3131Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:FinancialInstitutionAddress"
+            },
+            "rdfs:comment": "The code specifying the type of financial institution address.",
+            "rdfs:label": "financialInstitutionAddressTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancialInstitution_Address.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3131",
+                    "unece:cefactUNId": "UN01003174",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The code specifying the type of financial institution address."
+                }
+            ]
+        }
+    ]
+}

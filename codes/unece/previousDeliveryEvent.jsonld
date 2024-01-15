@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:previousDeliveryEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:SupplyChainEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:Material"
+                }
+            ],
+            "rdfs:comment": [
+                "A previous delivery event for this transport waste material.",
+                "A previous delivery event, at header level, for this trade delivery."
+            ],
+            "rdfs:label": "previousDeliveryEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TransportWaste_Material.Previous_Delivery.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013162",
+                    "unece:cefactBieDomainClass": "cefact:TransportWaste_Material.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A previous delivery event for this transport waste material."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Previous_Delivery.SupplyChain_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011642",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "A previous delivery event, at header level, for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:relatedObservation",
+            "schema:rangeIncludes": {
+                "@id": "unece:Observation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TransportEvent"
+            },
+            "rdfs:comment": "An observation related to this transport event.",
+            "rdfs:label": "relatedObservation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Event.Related.Specified_Observation",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012581",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "An observation related to this transport event."
+                }
+            ]
+        }
+    ]
+}

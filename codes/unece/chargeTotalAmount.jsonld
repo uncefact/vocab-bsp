@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:chargeTotalAmount",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:TradeSettlementHeaderMonetarySummation"
+                },
+                {
+                    "@id": "unece:TradeSettlementLineMonetarySummation"
+                }
+            ],
+            "rdfs:comment": [
+                "A monetary value of the total of all charge amounts being reported in this trade settlement header monetary summation.",
+                "A monetary value of the total of all charge amounts being reported in this trade settlement line monetary summation."
+            ],
+            "rdfs:label": "chargeTotalAmount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementHeader_MonetarySummation.ChargeTotal.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011873",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementHeader_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value of the total of all charge amounts being reported in this trade settlement header monetary summation."
+                },
+                {
+                    "@id": "cefact:TradeSettlementLine_MonetarySummation.ChargeTotal.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011898",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementLine_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value of the total of all charge amounts being reported in this trade settlement line monetary summation."
+                }
+            ]
+        }
+    ]
+}

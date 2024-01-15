@@ -1,0 +1,59 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:contentCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Marking"
+                },
+                {
+                    "@id": "unece:Note"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying the content of this note.",
+                "Content, expressed as a code, of this packaging marking."
+            ],
+            "rdfs:label": "contentCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Packaging_Marking.Content.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008444",
+                    "unece:cefactBieDomainClass": "cefact:Packaging_Marking.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "Content, expressed as a code, of this packaging marking."
+                },
+                {
+                    "@id": "cefact:Note.Content.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4441",
+                    "unece:cefactUNId": "UN01002521",
+                    "unece:cefactBieDomainClass": "cefact:Note.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A code specifying the content of this note."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Product",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Any tangible output or service produced by human or mechanical effort or by a natural process.",
+            "rdfs:label": "Product",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Product.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004027",
+                    "rdfs:comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                },
+                {
+                    "@id": "cefact:Trade_Product.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004679",
+                    "rdfs:comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

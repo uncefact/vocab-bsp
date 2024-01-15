@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:SubordinateLineTradeSettlement",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+            "rdfs:label": "SubordinateLineTradeSettlement",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SubordinateLine_TradeSettlement.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01011854",
+                    "rdfs:comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

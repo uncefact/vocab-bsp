@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:instructionId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeSettlementPayment"
+            },
+            "rdfs:comment": "The unique identifier of the instruction for this trade settlement payment.",
+            "rdfs:label": "instructionId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_Payment.Instruction.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008868",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlement_Payment.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The unique identifier of the instruction for this trade settlement payment."
+                }
+            ]
+        }
+    ]
+}

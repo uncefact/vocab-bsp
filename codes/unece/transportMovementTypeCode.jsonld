@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportMovementTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL8323Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:RegulatoryProcedure"
+            },
+            "rdfs:comment": "A code specifying the transport movement type, such as import, export, transit, for this cross-border regulatory procedure.",
+            "rdfs:label": "transportMovementTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.TransportMovement_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8323",
+                    "unece:cefactUNId": "UN01008957",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying the transport movement type, such as import, export, transit, for this cross-border regulatory procedure."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:physicalGeographicalCoordinate",
+            "schema:rangeIncludes": {
+                "@id": "unece:GeographicalCoordinate"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LogisticsLocation"
+                },
+                {
+                    "@id": "unece:SubordinateLocation"
+                },
+                {
+                    "@id": "unece:SubordinateSubordinateLocation"
+                }
+            ],
+            "rdfs:comment": [
+                "Geographical coordinate information for this logistics related location.",
+                "Physical geographical coordinate information for this subordinate location.",
+                "Physical geographical coordinate information for this subordinate of a subordinate location."
+            ],
+            "rdfs:label": "physicalGeographicalCoordinate",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Subordinate_Location.Physical.GeographicalCoordinate",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004096",
+                    "unece:cefactBieDomainClass": "cefact:Subordinate_Location.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Physical geographical coordinate information for this subordinate location."
+                },
+                {
+                    "@id": "cefact:Logistics_Location.Physical.GeographicalCoordinate",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003685",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Location.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Geographical coordinate information for this logistics related location."
+                },
+                {
+                    "@id": "cefact:SubordinateSubordinate_Location.Physical.GeographicalCoordinate",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004091",
+                    "unece:cefactBieDomainClass": "cefact:SubordinateSubordinate_Location.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Physical geographical coordinate information for this subordinate of a subordinate location."
+                }
+            ]
+        }
+    ]
+}

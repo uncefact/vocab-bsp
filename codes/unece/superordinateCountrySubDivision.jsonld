@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:superordinateCountrySubDivision",
+            "schema:rangeIncludes": {
+                "@id": "unece:CountrySubDivision"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:CountrySubDivision"
+            },
+            "rdfs:comment": "A superordinate country sub-division for this trade country sub-division.",
+            "rdfs:label": "superordinateCountrySubDivision",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_CountrySub-Division.Superordinate.Trade_CountrySub-Division",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002566",
+                    "unece:cefactBieDomainClass": "cefact:Trade_CountrySubDivision.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A superordinate country sub-division for this trade country sub-division."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:AccountingAccount",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A specific account for recording debits and credits to general accounting, cost accounting or budget accounting.",
+            "rdfs:label": "AccountingAccount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_AccountingAccount.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004522",
+                    "rdfs:comment": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

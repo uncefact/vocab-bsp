@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:frequencyEffectivePeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:Period"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Route"
+            },
+            "rdfs:comment": "A specified period of time for which a frequency is effective for this transport route.",
+            "rdfs:label": "frequencyEffectivePeriod",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Route.FrequencyEffective.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004832",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Route.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A specified period of time for which a frequency is effective for this transport route."
+                }
+            ]
+        }
+    ]
+}

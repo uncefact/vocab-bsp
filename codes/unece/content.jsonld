@@ -1,0 +1,110 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:content",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Clause"
+                },
+                {
+                    "@id": "unece:ComplexDescription"
+                },
+                {
+                    "@id": "unece:Marking"
+                },
+                {
+                    "@id": "unece:Note"
+                },
+                {
+                    "@id": "unece:Query"
+                },
+                {
+                    "@id": "unece:Response"
+                }
+            ],
+            "rdfs:comment": [
+                "A content, expressed as text, of this note.",
+                "Content, expressed as text, for this work item complex description.",
+                "Content, expressed as text, of this document clause.",
+                "Content, expressed as text, of this packaging marking.",
+                "The content, expressed as text, of this specification query.",
+                "The content, expressed as text, of this specification response."
+            ],
+            "rdfs:label": "content",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_ComplexDescription.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000069",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_ComplexDescription.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Content, expressed as text, for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                },
+                {
+                    "@id": "cefact:Document_Clause.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4068",
+                    "unece:cefactUNId": "UN01002648",
+                    "unece:cefactBieDomainClass": "cefact:Document_Clause.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Content, expressed as text, of this document clause."
+                },
+                {
+                    "@id": "cefact:Packaging_Marking.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003921",
+                    "unece:cefactBieDomainClass": "cefact:Packaging_Marking.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Content, expressed as text, of this packaging marking."
+                },
+                {
+                    "@id": "cefact:Note.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4440",
+                    "unece:cefactUNId": "UN01002522",
+                    "unece:cefactBieDomainClass": "cefact:Note.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A content, expressed as text, of this note."
+                },
+                {
+                    "@id": "cefact:Specification_Response.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4344",
+                    "unece:cefactUNId": "UN01000081",
+                    "unece:cefactBieDomainClass": "cefact:Specification_Response.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The content, expressed as text, of this specification response."
+                },
+                {
+                    "@id": "cefact:Specification_Query.Content.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4056",
+                    "unece:cefactUNId": "UN01000076",
+                    "unece:cefactBieDomainClass": "cefact:Specification_Query.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The content, expressed as text, of this specification query."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TradeSettlementPayment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The specific discharge obligations in respect of funds or securities transferred between two or more parties as part of a trade settlement.",
+            "rdfs:label": "TradeSettlementPayment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_Payment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01008866",
+                    "rdfs:comment": "The specific discharge obligations in respect of funds or securities transferred between two or more parties as part of a trade settlement.",
+                    "unece:cefactBusinessProcess": "Trade"
+                }
+            ]
+        }
+    ]
+}

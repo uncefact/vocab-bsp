@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:seasonCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Period"
+                },
+                {
+                    "@id": "unece:Product"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying a season for this trade product.",
+                "The code specifying the season for this specified period."
+            ],
+            "rdfs:label": "seasonCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Season.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008538",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "A code specifying a season for this trade product."
+                },
+                {
+                    "@id": "cefact:Specified_Period.Season.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01001278",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Period.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the season for this specified period."
+                }
+            ]
+        }
+    ]
+}

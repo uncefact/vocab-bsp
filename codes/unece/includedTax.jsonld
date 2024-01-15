@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedTax",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeTax"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AdvancePayment"
+                },
+                {
+                    "@id": "unece:TradePrice"
+                }
+            ],
+            "rdfs:comment": [
+                "A tax included in this advance payment.",
+                "A tax included in this trade price."
+            ],
+            "rdfs:label": "includedTax",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Advance_Payment.Included.Trade_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012134",
+                    "unece:cefactBieDomainClass": "cefact:Advance_Payment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax included in this advance payment."
+                },
+                {
+                    "@id": "cefact:Trade_Price.Included.Trade_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004649",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Price.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax included in this trade price."
+                }
+            ]
+        }
+    ]
+}

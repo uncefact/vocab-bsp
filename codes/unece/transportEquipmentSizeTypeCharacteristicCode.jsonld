@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportEquipmentSizeTypeCharacteristicCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL8155Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AttachedTransportEquipment"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                }
+            ],
+            "rdfs:comment": [
+                "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code.",
+                "The code specifying the characteristics, i.e. size and type, of this piece of attached transport equipment.",
+                "The code specifying the characteristics, such as size and type, of this referenced piece of logistics transport equipment."
+            ],
+            "rdfs:label": "transportEquipmentSizeTypeCharacteristicCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Attached_TransportEquipment.Characteristic.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8155",
+                    "unece:cefactUNId": "UN01003419",
+                    "unece:cefactBieDomainClass": "cefact:Attached_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the characteristics, i.e. size and type, of this piece of attached transport equipment."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.Characteristic.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8155",
+                    "unece:cefactUNId": "UN01004025",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the characteristics, such as size and type, of this referenced piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Characteristic.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8155",
+                    "unece:cefactUNId": "UN01003768",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code."
+                }
+            ]
+        }
+    ]
+}

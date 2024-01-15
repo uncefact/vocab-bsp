@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TelecommunicationCommunication",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Information necessary to establish an electronic telecommunication connection for the purpose of a telephone or facsimile exchange.",
+            "rdfs:label": "TelecommunicationCommunication",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Telecommunication_Communication.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002043",
+                    "rdfs:comment": "Information necessary to establish an electronic telecommunication connection for the purpose of a telephone or facsimile exchange.",
+                    "unece:cefactBusinessProcess": "Project Management"
+                }
+            ]
+        }
+    ]
+}

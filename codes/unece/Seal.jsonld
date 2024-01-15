@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Seal",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A device used to secure an object and protect from unauthorized entry or tampering such as a seal affixed to a piece of transport equipment.",
+            "rdfs:label": "Seal",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Seal.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003713",
+                    "rdfs:comment": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other logistics operations.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

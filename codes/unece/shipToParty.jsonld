@@ -1,0 +1,81 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:shipToParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:SupplyPlan"
+                }
+            ],
+            "rdfs:comment": [
+                "The ship to party for this supply chain consignment.",
+                "The ship to party, at header level, for this trade delivery.",
+                "The ship to party, at line level, for this trade delivery.",
+                "The ship to trade party for this supply chain supply plan."
+            ],
+            "rdfs:label": "shipToParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_SupplyPlan.ShipTo.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006704",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_SupplyPlan.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The ship to trade party for this supply chain supply plan."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.ShipTo.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011778",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The ship to party, at line level, for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.ShipTo.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011618",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The ship to party, at header level, for this trade delivery."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.ShipTo.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004222",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The ship to party for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

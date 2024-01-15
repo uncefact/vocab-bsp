@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:usedCoordinateSourceSystem",
+            "schema:rangeIncludes": {
+                "@id": "unece:CoordinateSourceSystem"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GeographicalCoordinate"
+                },
+                {
+                    "@id": "unece:GeographicalFeature"
+                }
+            ],
+            "rdfs:comment": [
+                "The geographical coordinate source system used for this geographical coordinate.",
+                "The geographical coordinate source system used for this specified geographical feature."
+            ],
+            "rdfs:label": "usedCoordinateSourceSystem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalFeature.Used.Geographical_CoordinateSourceSystem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013620",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalFeature.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The geographical coordinate source system used for this specified geographical feature."
+                },
+                {
+                    "@id": "cefact:GeographicalCoordinate.Used.Geographical_CoordinateSourceSystem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013614",
+                    "unece:cefactBieDomainClass": "cefact:GeographicalCoordinate.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The geographical coordinate source system used for this geographical coordinate."
+                }
+            ]
+        }
+    ]
+}

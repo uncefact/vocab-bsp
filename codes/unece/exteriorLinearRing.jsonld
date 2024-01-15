@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:exteriorLinearRing",
+            "schema:rangeIncludes": {
+                "@id": "unece:LinearRing"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Polygon"
+            },
+            "rdfs:comment": "The exterior linear specified ring for this polygon.",
+            "rdfs:label": "exteriorLinearRing",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_Polygon.Exterior.Specified_LinearRing",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010477",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Polygon.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The exterior linear specified ring for this polygon."
+                }
+            ]
+        }
+    ]
+}

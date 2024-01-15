@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Route",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A way or course taken from one location to another.",
+            "rdfs:label": "Route",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Route.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004822",
+                    "rdfs:comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

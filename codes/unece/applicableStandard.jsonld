@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableStandard",
+            "schema:rangeIncludes": {
+                "@id": "unece:Standard"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Characteristic"
+                },
+                {
+                    "@id": "unece:Classification"
+                }
+            ],
+            "rdfs:comment": [
+                "The referenced standard that is applicable to this product characteristic.",
+                "The referenced standard that is applicable to this product classification."
+            ],
+            "rdfs:label": "applicableStandard",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Product_Classification.Applicable.Referenced_Standard",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008311",
+                    "unece:cefactBieDomainClass": "cefact:Product_Classification.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The referenced standard that is applicable to this product classification."
+                },
+                {
+                    "@id": "cefact:Product_Characteristic.Applicable.Referenced_Standard",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008309",
+                    "unece:cefactBieDomainClass": "cefact:Product_Characteristic.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The referenced standard that is applicable to this product characteristic."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:totalQuantityClassificationCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:WorkItem"
+            },
+            "rdfs:comment": "The code specifying the classification of the total quantity for this basic work item.",
+            "rdfs:label": "totalQuantityClassificationCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Basic_WorkItem.TotalQuantityClassification.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000034",
+                    "unece:cefactBieDomainClass": "cefact:Basic_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the classification of the total quantity for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                }
+            ]
+        }
+    ]
+}

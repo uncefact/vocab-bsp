@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:nextInvoiceDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:HeaderTradeSettlement"
+            },
+            "rdfs:comment": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement.",
+            "rdfs:label": "nextInvoiceDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeSettlement.Next_Invoice.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011659",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement."
+                }
+            ]
+        }
+    ]
+}

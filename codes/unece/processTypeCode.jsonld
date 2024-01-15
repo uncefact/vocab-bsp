@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:processTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL7187Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Process"
+            },
+            "rdfs:comment": "The code specifying the type of product handling process.",
+            "rdfs:label": "processTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ProductHandling_Process.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7187",
+                    "unece:cefactUNId": "UN01002628",
+                    "unece:cefactBieDomainClass": "cefact:ProductHandling_Process.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of product handling process."
+                }
+            ]
+        }
+    ]
+}

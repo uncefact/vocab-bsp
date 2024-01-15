@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Dimension",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A measure of spatial extent, such as length, breadth or height.",
+            "rdfs:label": "Dimension",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Spatial_Dimension.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004075",
+                    "rdfs:comment": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                },
+                {
+                    "@id": "cefact:WorkItem_Dimension.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01000056",
+                    "rdfs:comment": "A measure of spatial extent associated with this work item, such as length, breadth, or height.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

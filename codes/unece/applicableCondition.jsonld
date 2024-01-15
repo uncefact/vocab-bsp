@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableCondition",
+            "schema:rangeIncludes": {
+                "@id": "unece:Condition"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Characteristic"
+            },
+            "rdfs:comment": "A condition applicable to this product characteristic.",
+            "rdfs:label": "applicableCondition",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Product_Characteristic.Applicable.ProductCharacteristic_Condition",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008308",
+                    "unece:cefactBieDomainClass": "cefact:Product_Characteristic.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "A condition applicable to this product characteristic."
+                }
+            ]
+        }
+    ]
+}

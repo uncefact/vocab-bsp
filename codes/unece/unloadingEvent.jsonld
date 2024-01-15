@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:unloadingEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:TransportEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:TransportMovement"
+                }
+            ],
+            "rdfs:comment": [
+                "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement.",
+                "The unloading event for this piece of logistics transport equipment."
+            ],
+            "rdfs:label": "unloadingEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Unloading.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003803",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unloading event for this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportMovement.Unloading.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003857",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMovement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+                }
+            ]
+        }
+    ]
+}

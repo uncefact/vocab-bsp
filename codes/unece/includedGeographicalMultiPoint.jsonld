@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedGeographicalMultiPoint",
+            "schema:rangeIncludes": {
+                "@id": "unece:GeographicalMultiPoint"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:GeographicalFeature"
+            },
+            "rdfs:comment": "The geographical multi-point included in this geographical feature.",
+            "rdfs:label": "includedGeographicalMultiPoint",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalFeature.Included.Specified_GeographicalMulti-Point",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012175",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalFeature.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical multi-point included in this geographical feature."
+                }
+            ]
+        }
+    ]
+}

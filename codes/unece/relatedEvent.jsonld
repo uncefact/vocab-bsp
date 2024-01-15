@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:relatedEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:CommunicationEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:IOTDevice"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                }
+            ],
+            "rdfs:comment": [
+                "A communication event related to this monitoring IOT device.",
+                "A communication event related to this piece of logistics transport equipment."
+            ],
+            "rdfs:label": "relatedEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Related.Communication_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013594",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A communication event related to this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Monitoring_IOTDevice.Related.Communication_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013492",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_IOTDevice.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A communication event related to this monitoring IOT device."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:declaredForCustomsLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:LogisticsLocation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                }
+            ],
+            "rdfs:comment": [
+                "The location of this supply chain consignment as declared for customs.",
+                "The location of this supply chain consignment item as declared for customs."
+            ],
+            "rdfs:label": "declaredForCustomsLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.DeclaredForCustoms.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004144",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The location of this supply chain consignment item as declared for customs."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.DeclaredForCustoms.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004241",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The location of this supply chain consignment as declared for customs."
+                }
+            ]
+        }
+    ]
+}

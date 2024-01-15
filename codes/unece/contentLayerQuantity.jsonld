@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:contentLayerQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Packaging"
+            },
+            "rdfs:comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet.",
+            "rdfs:label": "contentLayerQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Packaging.ContentLayer.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008489",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Packaging.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Segment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Each of the parts into which something is or may be divided.",
+            "rdfs:label": "Segment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Section_Segment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012735",
+                    "rdfs:comment": "The parts into which a segment is or may be divided.",
+                    "unece:cefactBusinessProcess": "Cross Industry Trade"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:packagingMarkingTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL7511Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Marking"
+            },
+            "rdfs:comment": "A code specifying a type of packaging marking.",
+            "rdfs:label": "packagingMarkingTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Packaging_Marking.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7511",
+                    "unece:cefactUNId": "UN01003920",
+                    "unece:cefactBieDomainClass": "cefact:Packaging_Marking.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A code specifying a type of packaging marking."
+                }
+            ]
+        }
+    ]
+}

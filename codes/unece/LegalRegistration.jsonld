@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:LegalRegistration",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The recording of items or details for a specific legal purpose.",
+            "rdfs:label": "LegalRegistration",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Legal_Registration.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003648",
+                    "rdfs:comment": "The recording of items or details for a specific legal purpose.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

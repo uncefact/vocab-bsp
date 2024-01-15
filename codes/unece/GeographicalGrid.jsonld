@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:GeographicalGrid",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+            "rdfs:label": "GeographicalGrid",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalGrid.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012202",
+                    "rdfs:comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+                    "unece:cefactBusinessProcess": "Agricultural"
+                }
+            ]
+        }
+    ]
+}

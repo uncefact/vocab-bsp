@@ -1,0 +1,53 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:longitudeDirectionIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:GeographicalCoordinate"
+            },
+            "rdfs:comment": [
+                "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709).",
+                "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this specified geographical coordinate. (Reference ISO 6709)."
+            ],
+            "rdfs:label": "longitudeDirectionIndicator",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:GeographicalCoordinate.LongitudeDirection.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003621",
+                    "unece:cefactBieDomainClass": "cefact:GeographicalCoordinate.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalCoordinate.LongitudeDirection.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01002031",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalCoordinate.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this specified geographical coordinate. (Reference ISO 6709)."
+                }
+            ]
+        }
+    ]
+}

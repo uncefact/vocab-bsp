@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableTradeSettlement",
+            "schema:rangeIncludes": {
+                "@id": "unece:HeaderTradeSettlement"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeTransaction"
+            },
+            "rdfs:comment": "The trade settlement header applicable to this supply chain trade transaction.",
+            "rdfs:label": "applicableTradeSettlement",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_TradeTransaction.Applicable.Header_TradeSettlement",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011870",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeTransaction.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The trade settlement header applicable to this supply chain trade transaction."
+                }
+            ]
+        }
+    ]
+}

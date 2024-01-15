@@ -1,0 +1,81 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableCharacteristic",
+            "schema:rangeIncludes": {
+                "@id": "unece:Characteristic"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Equipment"
+                },
+                {
+                    "@id": "unece:Process"
+                },
+                {
+                    "@id": "unece:Product"
+                },
+                {
+                    "@id": "unece:ProductInstance"
+                }
+            ],
+            "rdfs:comment": [
+                "A characteristic applicable to this trade product.",
+                "A physical characteristic applicable to this OEM equipment.",
+                "A process characteristic applicable to this product handling process.",
+                "A product characteristic applicable to this trade product instance."
+            ],
+            "rdfs:label": "applicableCharacteristic",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ProductHandling_Process.Applicable.Process_Characteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002630",
+                    "unece:cefactBieDomainClass": "cefact:ProductHandling_Process.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A process characteristic applicable to this product handling process."
+                },
+                {
+                    "@id": "cefact:OEM_Equipment.Applicable.Physical_Characteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013558",
+                    "unece:cefactBieDomainClass": "cefact:OEM_Equipment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A physical characteristic applicable to this OEM equipment."
+                },
+                {
+                    "@id": "cefact:Trade_Product.Applicable.Product_Characteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004694",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A characteristic applicable to this trade product."
+                },
+                {
+                    "@id": "cefact:Trade_ProductInstance.Applicable.Product_Characteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011926",
+                    "unece:cefactBieDomainClass": "cefact:Trade_ProductInstance.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A product characteristic applicable to this trade product instance."
+                }
+            ]
+        }
+    ]
+}

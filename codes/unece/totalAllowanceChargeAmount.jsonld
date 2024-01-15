@@ -1,0 +1,70 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:totalAllowanceChargeAmount",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:TradeSettlementHeaderMonetarySummation"
+                },
+                {
+                    "@id": "unece:TradeSettlementLineMonetarySummation"
+                }
+            ],
+            "rdfs:comment": [
+                "A monetary value of a total allowance and charge reported in this trade settlement header monetary summation.",
+                "A monetary value of a total allowance and charge reported in this trade settlement line monetary summation.",
+                "The total monetary value of all allowances and charges for this supply chain consignment."
+            ],
+            "rdfs:label": "totalAllowanceChargeAmount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementLine_MonetarySummation.TotalAllowanceCharge.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011904",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementLine_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value of a total allowance and charge reported in this trade settlement line monetary summation."
+                },
+                {
+                    "@id": "cefact:TradeSettlementHeader_MonetarySummation.TotalAllowanceCharge.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011882",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementHeader_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value of a total allowance and charge reported in this trade settlement header monetary summation."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.TotalAllowanceCharge.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004185",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The total monetary value of all allowances and charges for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:CoordinateSourceSystem",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Properties defining a coordinate source system used in different places around the world to identify locations on the earth.",
+            "rdfs:label": "CoordinateSourceSystem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Geographical_CoordinateSourceSystem.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013571",
+                    "rdfs:comment": "Properties defining a geographical coordinate source system used in different places around the world to identify locations on the earth.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

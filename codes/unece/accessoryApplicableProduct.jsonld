@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:accessoryApplicableProduct",
+            "schema:rangeIncludes": {
+                "@id": "unece:Product"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeLineItem"
+            },
+            "rdfs:comment": "A referenced accessory product applicable for this supply chain trade line item.",
+            "rdfs:label": "accessoryApplicableProduct",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_TradeLineItem.Accessory_Applicable.Referenced_Product",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007231",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeLineItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A referenced accessory product applicable for this supply chain trade line item."
+                }
+            ]
+        }
+    ]
+}

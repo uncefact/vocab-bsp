@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:supportCentreParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LineTradeAgreement"
+            },
+            "rdfs:comment": "The support centre party for this line trade agreement.",
+            "rdfs:label": "supportCentreParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeAgreement.SupportCentre.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011730",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The support centre party for this line trade agreement."
+                }
+            ]
+        }
+    ]
+}

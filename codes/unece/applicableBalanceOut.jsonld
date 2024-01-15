@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableBalanceOut",
+            "schema:rangeIncludes": {
+                "@id": "unece:BalanceOut"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:TradeSettlementHeaderMonetarySummation"
+                },
+                {
+                    "@id": "unece:TradeSettlementPaymentMonetarySummation"
+                }
+            ],
+            "rdfs:comment": [
+                "A balance out applicable to this trade settlement payment monetary summation.",
+                "A header balance out applicable to this trade settlement header monetary summation."
+            ],
+            "rdfs:label": "applicableBalanceOut",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementPayment_MonetarySummation.Applicable.Payment_BalanceOut",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011917",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementPayment_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A balance out applicable to this trade settlement payment monetary summation."
+                },
+                {
+                    "@id": "cefact:TradeSettlementHeader_MonetarySummation.Applicable.Header_BalanceOut",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011895",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementHeader_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A header balance out applicable to this trade settlement header monetary summation."
+                }
+            ]
+        }
+    ]
+}

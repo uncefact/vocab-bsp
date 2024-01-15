@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:liftingInstructionsRelatedDocument",
+            "schema:rangeIncludes": {
+                "@id": "unece:Document"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TransportMovement"
+            },
+            "rdfs:comment": "A referenced lifting instructions document related to this logistics transport movement.",
+            "rdfs:label": "liftingInstructionsRelatedDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportMovement.LiftingInstructions_Related.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003878",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMovement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A referenced lifting instructions document related to this logistics transport movement."
+                }
+            ]
+        }
+    ]
+}

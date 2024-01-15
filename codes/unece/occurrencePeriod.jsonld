@@ -1,0 +1,66 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:occurrencePeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:Period"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:SupplyChainEvent"
+                },
+                {
+                    "@id": "unece:TransportEvent"
+                }
+            ],
+            "rdfs:comment": [
+                "A specified period of time during which this supply chain event occurs.",
+                "A specified period of time during which this transport event occurs.",
+                "A specified period of time for the occurrence of this referenced transport event."
+            ],
+            "rdfs:label": "occurrencePeriod",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Event.Occurrence.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004298",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A specified period of time during which this supply chain event occurs."
+                },
+                {
+                    "@id": "cefact:Transport_Event.Occurrence.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004804",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A specified period of time during which this transport event occurs."
+                },
+                {
+                    "@id": "cefact:Referenced_Transport_Event.Occurrence.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010085",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A specified period of time for the occurrence of this referenced transport event."
+                }
+            ]
+        }
+    ]
+}

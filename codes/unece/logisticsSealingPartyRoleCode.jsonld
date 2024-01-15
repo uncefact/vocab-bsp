@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:logisticsSealingPartyRoleCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL9303Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Seal"
+            },
+            "rdfs:comment": "The code specifying the role of the party responsible for the sealing of this logistics seal.",
+            "rdfs:label": "logisticsSealingPartyRoleCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Seal.SealingPartyRole.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9303",
+                    "unece:cefactUNId": "UN01003718",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Seal.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
+                }
+            ]
+        }
+    ]
+}

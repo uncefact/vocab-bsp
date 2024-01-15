@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Certificate",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A legal proof of ownership or worthiness of an item.",
+            "rdfs:label": "Certificate",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Product_Certificate.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012483",
+                    "rdfs:comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the product.",
+                    "unece:cefactBusinessProcess": "Traceability"
+                }
+            ]
+        }
+    ]
+}

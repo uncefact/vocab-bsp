@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:streetName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancialInstitutionAddress"
+                },
+                {
+                    "@id": "unece:TradeAddress"
+                }
+            ],
+            "rdfs:comment": [
+                "A name, expressed as text, of a street or thoroughfare for this trade address.",
+                "The name, expressed as text, of the street or thoroughfare for this financial institution address."
+            ],
+            "rdfs:label": "streetName",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Address.StreetName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004543",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Address.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A name, expressed as text, of a street or thoroughfare for this trade address."
+                },
+                {
+                    "@id": "cefact:FinancialInstitution_Address.StreetName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003180",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The name, expressed as text, of the street or thoroughfare for this financial institution address."
+                }
+            ]
+        }
+    ]
+}

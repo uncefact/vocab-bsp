@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:modificationForecastedQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "The modification of a forecasted quantity, at line level, for this trade delivery.",
+                "The modification of a previously forecasted quantity, at header level, for this trade delivery."
+            ],
+            "rdfs:label": "modificationForecastedQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeDelivery.Modification_Forecasted.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013007",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The modification of a forecasted quantity, at line level, for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Modification_Forecasted.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011611",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The modification of a previously forecasted quantity, at header level, for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

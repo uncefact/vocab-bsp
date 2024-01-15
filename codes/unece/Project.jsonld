@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Project",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An endeavour carefully planned to achieve a unique product, service, or other particular aim such as a construction project.",
+            "rdfs:label": "Project",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Procuring_Project.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01000371",
+                    "rdfs:comment": "An endeavour carefully planned to achieve a procurement of goods, works and service.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

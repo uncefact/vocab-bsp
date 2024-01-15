@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:assertionCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Certification"
+            },
+            "rdfs:comment": "A code specifying an assertion for this trade product certification, such as claims that a product is free from peanuts.",
+            "rdfs:label": "assertionCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeProduct_Certification.Assertion.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008293",
+                    "unece:cefactBieDomainClass": "cefact:TradeProduct_Certification.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A code specifying an assertion for this trade product certification, such as claims that a product is free from peanuts."
+                }
+            ]
+        }
+    ]
+}

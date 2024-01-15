@@ -1,0 +1,66 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedRegistration",
+            "schema:rangeIncludes": {
+                "@id": "unece:TaxRegistration"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ContactPerson"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A governmental registration specified for this trade party.",
+                "A tax registration specified for this contact person.",
+                "A tax registration specified for this trade party."
+            ],
+            "rdfs:label": "specifiedRegistration",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Specified.Government_Registration",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011071",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A governmental registration specified for this trade party."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Specified.Tax_Registration",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004611",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax registration specified for this trade party."
+                },
+                {
+                    "@id": "cefact:Contact_Person.Specified.Tax_Registration",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013207",
+                    "unece:cefactBieDomainClass": "cefact:Contact_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A tax registration specified for this contact person."
+                }
+            ]
+        }
+    ]
+}

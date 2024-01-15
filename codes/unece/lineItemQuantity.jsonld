@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:lineItemQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExchangedDocument"
+                },
+                {
+                    "@id": "unece:TradeTransaction"
+                }
+            ],
+            "rdfs:comment": [
+                "The number of line items for this supply chain trade transaction.",
+                "The number of line items in this exchanged document."
+            ],
+            "rdfs:label": "lineItemQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_TradeTransaction.LineItem.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004902",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeTransaction.Details",
+                    "unece:cefactBusinessProcess": "Cross-Border",
+                    "rdfs:comment": "The number of line items for this supply chain trade transaction."
+                },
+                {
+                    "@id": "cefact:Exchanged_Document.Line_Item.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003568",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The number of line items in this exchanged document."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:documentLineStatusCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL1073Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:DocumentLineDocument"
+            },
+            "rdfs:comment": "The code specifying the status of this document line.",
+            "rdfs:label": "documentLineStatusCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:DocumentLine_Document.LineStatus.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1073",
+                    "unece:cefactUNId": "UN01003517",
+                    "unece:cefactBieDomainClass": "cefact:DocumentLine_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the status of this document line."
+                }
+            ]
+        }
+    ]
+}

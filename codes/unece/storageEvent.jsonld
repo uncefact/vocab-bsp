@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:storageEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:TransportEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                }
+            ],
+            "rdfs:comment": [
+                "A storage event for this supply chain consignment.",
+                "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+            ],
+            "rdfs:label": "storageEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Storage.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003804",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Storage.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004255",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A storage event for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

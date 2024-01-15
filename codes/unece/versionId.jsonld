@@ -1,0 +1,107 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:versionId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BinaryFile"
+                },
+                {
+                    "@id": "unece:Declaration"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                },
+                {
+                    "@id": "unece:GovernmentRegistration"
+                },
+                {
+                    "@id": "unece:Measurement"
+                },
+                {
+                    "@id": "unece:Standard"
+                }
+            ],
+            "rdfs:comment": [
+                "The identifier for the version of this exchanged declaration.",
+                "The identifier of a version of this calibrated measurement.",
+                "The identifier of the version of this government registration.",
+                "The identifier of the version of this referenced standard.",
+                "The unique identifier for the version of this exchanged document.",
+                "The unique version identifier for this specified binary file."
+            ],
+            "rdfs:label": "versionId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Declaration.Version.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011012",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Declaration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The identifier for the version of this exchanged declaration."
+                },
+                {
+                    "@id": "cefact:Referenced_Standard.Version.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008542",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Standard.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The identifier of the version of this referenced standard."
+                },
+                {
+                    "@id": "cefact:Calibrated_Measurement.Version.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013533",
+                    "unece:cefactBieDomainClass": "cefact:Calibrated_Measurement.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The identifier of a version of this calibrated measurement."
+                },
+                {
+                    "@id": "cefact:Government_Registration.Version.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011030",
+                    "unece:cefactBieDomainClass": "cefact:Government_Registration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The identifier of the version of this government registration."
+                },
+                {
+                    "@id": "cefact:Specified_BinaryFile.Version.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01006018",
+                    "unece:cefactBieDomainClass": "cefact:Specified_BinaryFile.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The unique version identifier for this specified binary file."
+                },
+                {
+                    "@id": "cefact:Exchanged_Document.Version_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1004",
+                    "unece:cefactUNId": "UN01003573",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The unique identifier for the version of this exchanged document."
+                }
+            ]
+        }
+    ]
+}

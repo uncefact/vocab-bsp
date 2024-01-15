@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedPackaging",
+            "schema:rangeIncludes": {
+                "@id": "unece:Packaging"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:SubordinateLineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "Packaging included in this subordinate line trade delivery.",
+                "Packaging included, at line level, in this trade delivery.",
+                "Packaging, at header level, included in this trade delivery."
+            ],
+            "rdfs:label": "includedPackaging",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeDelivery.Included.SupplyChain_Packaging",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011776",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Packaging included, at line level, in this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Included.SupplyChain_Packaging",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011616",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Packaging, at header level, included in this trade delivery."
+                },
+                {
+                    "@id": "cefact:SubordinateLine_TradeDelivery.Included.SupplyChain_Packaging",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011853",
+                    "unece:cefactBieDomainClass": "cefact:SubordinateLine_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Packaging included in this subordinate line trade delivery."
+                }
+            ]
+        }
+    ]
+}

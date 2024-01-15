@@ -1,0 +1,66 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:despatchParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                }
+            ],
+            "rdfs:comment": [
+                "The party from whom this referenced supply chain consignment will be or has been despatched.",
+                "The party from whom this supply chain consignment item will be or has been despatched.",
+                "The party from whom this supply chain consignment will be or has been despatched."
+            ],
+            "rdfs:label": "despatchParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Despatch.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004147",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The party from whom this supply chain consignment item will be or has been despatched."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Despatch.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004219",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The party from whom this supply chain consignment will be or has been despatched."
+                },
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.Despatch.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011056",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The party from whom this referenced supply chain consignment will be or has been despatched."
+                }
+            ]
+        }
+    ]
+}

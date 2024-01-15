@@ -1,0 +1,73 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:languageId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                },
+                {
+                    "@id": "unece:TransportPerson"
+                }
+            ],
+            "rdfs:comment": [
+                "A unique identifier for a language used in this exchanged document.",
+                "A unique identifier of a language related to this transport person, such as their spoken or correspondence language.",
+                "An identifier for a language used in this referenced document."
+            ],
+            "rdfs:label": "languageId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Language.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3453",
+                    "unece:cefactUNId": "UN01004819",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+                },
+                {
+                    "@id": "cefact:Referenced_Document.Language.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3453",
+                    "unece:cefactUNId": "UN01008989",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An identifier for a language used in this referenced document."
+                },
+                {
+                    "@id": "cefact:Exchanged_Document.Language.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3453",
+                    "unece:cefactUNId": "UN01003554",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A unique identifier for a language used in this exchanged document."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:itemWorkItem",
+            "schema:rangeIncludes": {
+                "@id": "unece:WorkItem"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BreakdownStatement"
+                },
+                {
+                    "@id": "unece:WorkItem"
+                }
+            ],
+            "rdfs:comment": [
+                "A basic work item in this basic work item.",
+                "A basic work item in this valuation breakdown statement.",
+                "A basic work item within this grouped work item.",
+                "A grouped work item in this valuation breakdown statement.",
+                "A grouped work item within this grouped work item."
+            ],
+            "rdfs:label": "itemWorkItem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Basic_WorkItem.Item.Basic_WorkItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007567",
+                    "unece:cefactBieDomainClass": "cefact:Basic_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A basic work item in this basic work item."
+                },
+                {
+                    "@id": "cefact:Valuation_BreakdownStatement.Item.Grouped_WorkItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007558",
+                    "unece:cefactBieDomainClass": "cefact:Valuation_BreakdownStatement.Details",
+                    "unece:cefactBusinessProcess": "Invoicing",
+                    "rdfs:comment": "A grouped work item in this valuation breakdown statement."
+                },
+                {
+                    "@id": "cefact:Valuation_BreakdownStatement.Item.Basic_WorkItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007559",
+                    "unece:cefactBieDomainClass": "cefact:Valuation_BreakdownStatement.Details",
+                    "unece:cefactBusinessProcess": "Invoicing",
+                    "rdfs:comment": "A basic work item in this valuation breakdown statement."
+                },
+                {
+                    "@id": "cefact:Grouped_WorkItem.Item.Grouped_WorkItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007568",
+                    "unece:cefactBieDomainClass": "cefact:Grouped_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A grouped work item within this grouped work item."
+                },
+                {
+                    "@id": "cefact:Grouped_WorkItem.Item.Basic_WorkItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007569",
+                    "unece:cefactBieDomainClass": "cefact:Grouped_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A basic work item within this grouped work item."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedNote",
+            "schema:rangeIncludes": {
+                "@id": "unece:Note"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:DocumentLineDocument"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                }
+            ],
+            "rdfs:comment": [
+                "A note included in this document line.",
+                "A note included in this exchanged document.",
+                "A note included in this referenced document."
+            ],
+            "rdfs:label": "includedNote",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Document.Included.Note",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012756",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A note included in this referenced document."
+                },
+                {
+                    "@id": "cefact:Exchanged_Document.Included.Note",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002497",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A note included in this exchanged document."
+                },
+                {
+                    "@id": "cefact:DocumentLine_Document.Included.Note",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003519",
+                    "unece:cefactBieDomainClass": "cefact:DocumentLine_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A note included in this document line."
+                }
+            ]
+        }
+    ]
+}

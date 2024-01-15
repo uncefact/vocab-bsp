@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Standard",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+            "rdfs:label": "Standard",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Standard.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01008540",
+                    "rdfs:comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+                    "unece:cefactBusinessProcess": "Supply Chain"
+                }
+            ]
+        }
+    ]
+}

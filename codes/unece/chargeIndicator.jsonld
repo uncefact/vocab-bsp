@@ -1,0 +1,53 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:chargeIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AllowanceCharge"
+            },
+            "rdfs:comment": [
+                "The indication of whether or not the applied allowance charge is a charge.",
+                "The indication of whether or not the trade allowance charge is a charge."
+            ],
+            "rdfs:label": "chargeIndicator",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Applied_AllowanceCharge.Charge.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000194",
+                    "unece:cefactBieDomainClass": "cefact:Applied_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Pricing",
+                    "rdfs:comment": "The indication of whether or not the applied allowance charge is a charge."
+                },
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Charge.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01001632",
+                    "unece:cefactBieDomainClass": "cefact:Trade_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The indication of whether or not the trade allowance charge is a charge."
+                }
+            ]
+        }
+    ]
+}

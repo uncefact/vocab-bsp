@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:operatorParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:IOTDevice"
+                },
+                {
+                    "@id": "unece:Process"
+                },
+                {
+                    "@id": "unece:TransportMeans"
+                }
+            ],
+            "rdfs:comment": [
+                "A trade party who is an operator of this product handling process.",
+                "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device.",
+                "The party operating this logistics means of transport."
+            ],
+            "rdfs:label": "operatorParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportMeans.Operator.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003835",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The party operating this logistics means of transport."
+                },
+                {
+                    "@id": "cefact:Monitoring_IOTDevice.Operator.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013488",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_IOTDevice.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
+                },
+                {
+                    "@id": "cefact:ProductHandling_Process.Operator.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003970",
+                    "unece:cefactBieDomainClass": "cefact:ProductHandling_Process.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A trade party who is an operator of this product handling process."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:MaterialComponent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A component of something inanimate that occupies space and possesses mass.",
+            "rdfs:label": "MaterialComponent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TransportWaste_MaterialComponent.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013152",
+                    "rdfs:comment": "An unused and rejected as unwanted component of transport material.",
+                    "unece:cefactBusinessProcess": "Transport"
+                }
+            ]
+        }
+    ]
+}

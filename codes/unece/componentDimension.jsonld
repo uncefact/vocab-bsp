@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:componentDimension",
+            "schema:rangeIncludes": {
+                "@id": "unece:Dimension"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Dimension"
+            },
+            "rdfs:comment": "A work item component dimension for this work item dimension.",
+            "rdfs:label": "componentDimension",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_Dimension.Component.WorkItem_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000061",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A work item component dimension for this work item dimension. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                }
+            ]
+        }
+    ]
+}

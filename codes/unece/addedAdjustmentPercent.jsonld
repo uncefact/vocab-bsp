@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:addedAdjustmentPercent",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:CustomsValuation"
+            },
+            "rdfs:comment": "The adjustment added, expressed as a percentage, for this cross-border customs valuation.",
+            "rdfs:label": "addedAdjustmentPercent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_CustomsValuation.Added_Adjustment.Percent",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "5510",
+                    "unece:cefactUNId": "UN01003486",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_CustomsValuation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The adjustment added, expressed as a percentage, for this cross-border customs valuation."
+                }
+            ]
+        }
+    ]
+}

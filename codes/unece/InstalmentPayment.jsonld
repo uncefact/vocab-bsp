@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:InstalmentPayment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two or more parties.",
+            "rdfs:label": "InstalmentPayment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Instalment_Payment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013272",
+                    "rdfs:comment": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two or more parties.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

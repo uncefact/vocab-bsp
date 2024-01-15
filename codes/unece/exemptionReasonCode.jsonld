@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:exemptionReasonCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:RegisteredTax"
+                },
+                {
+                    "@id": "unece:TradeTax"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying a reason for exemption from this trade related tax, levy or duty.",
+                "The code specifying the exemption reason for this registered tax."
+            ],
+            "rdfs:label": "exemptionReasonCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Registered_Tax.ExemptionReason.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004059",
+                    "unece:cefactBieDomainClass": "cefact:Registered_Tax.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the exemption reason for this registered tax."
+                },
+                {
+                    "@id": "cefact:Trade_Tax.ExemptionReason.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004723",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Tax.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying a reason for exemption from this trade related tax, levy or duty."
+                }
+            ]
+        }
+    ]
+}

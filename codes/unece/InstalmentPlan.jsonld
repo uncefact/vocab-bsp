@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:InstalmentPlan",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A plan for paying a total sum of money by several payments made over a period of time.",
+            "rdfs:label": "InstalmentPlan",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Payment_InstalmentPlan.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013277",
+                    "rdfs:comment": "A plan for paying a total sum of money by several payments made over a period of time.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

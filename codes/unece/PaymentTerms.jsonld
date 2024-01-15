@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:PaymentTerms",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Terms and conditions by which payment has been or will be made.",
+            "rdfs:label": "PaymentTerms",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentTerms.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01001672",
+                    "rdfs:comment": "Terms and conditions by which payment has been or will be made for trade purposes.",
+                    "unece:cefactBusinessProcess": "Trade"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:tradeSettlementPaymentMeansId",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4461Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:PaymentMeans"
+            },
+            "rdfs:comment": "An identifier for this trade settlement payment means.",
+            "rdfs:label": "tradeSettlementPaymentMeansId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_PaymentMeans.Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4461",
+                    "unece:cefactUNId": "UN01006055",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlement_PaymentMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "An identifier for this trade settlement payment means."
+                }
+            ]
+        }
+    ]
+}

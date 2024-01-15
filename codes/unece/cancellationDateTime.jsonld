@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:cancellationDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ExchangedDocument"
+            },
+            "rdfs:comment": "The date, time, date time, or other date time value of a cancellation of the exchanged document.",
+            "rdfs:label": "cancellationDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Cancellation.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2095",
+                    "unece:cefactUNId": "UN01005275",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date, time, date time, or other date time value of a cancellation of the exchanged document."
+                }
+            ]
+        }
+    ]
+}

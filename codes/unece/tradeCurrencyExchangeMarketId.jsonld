@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:tradeCurrencyExchangeMarketId",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL6341Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:CurrencyExchange"
+            },
+            "rdfs:comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes.",
+            "rdfs:label": "tradeCurrencyExchangeMarketId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_CurrencyExchange.Market.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6341",
+                    "unece:cefactUNId": "UN01004581",
+                    "unece:cefactBieDomainClass": "cefact:Trade_CurrencyExchange.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+                }
+            ]
+        }
+    ]
+}

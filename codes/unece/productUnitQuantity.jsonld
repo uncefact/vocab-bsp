@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:productUnitQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:SubordinateLineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "The number of product units in this subordinate line trade delivery.",
+                "The number of product units, at line level, in this trade delivery."
+            ],
+            "rdfs:label": "productUnitQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeDelivery.Product_Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011765",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of product units, at line level, in this trade delivery."
+                },
+                {
+                    "@id": "cefact:SubordinateLine_TradeDelivery.Product_Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011851",
+                    "unece:cefactBieDomainClass": "cefact:SubordinateLine_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of product units in this subordinate line trade delivery."
+                }
+            ]
+        }
+    ]
+}

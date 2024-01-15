@@ -1,0 +1,78 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:changedStatus",
+            "schema:rangeIncludes": {
+                "@id": "unece:RecordedStatus"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BreakdownStatement"
+                },
+                {
+                    "@id": "unece:QuantityAnalysis"
+                },
+                {
+                    "@id": "unece:WorkItem"
+                }
+            ],
+            "rdfs:comment": [
+                "A changed recorded status for this basic work item.",
+                "A changed recorded status for this grouped work item.",
+                "A changed recorded status for this valuation breakdown statement.",
+                "A changed recorded status for this work item quantity analysis."
+            ],
+            "rdfs:label": "changedStatus",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Grouped_WorkItem.Changed.Recorded_Status",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007513",
+                    "unece:cefactBieDomainClass": "cefact:Grouped_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A changed recorded status for this grouped work item."
+                },
+                {
+                    "@id": "cefact:Basic_WorkItem.Changed.Recorded_Status",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007492",
+                    "unece:cefactBieDomainClass": "cefact:Basic_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A changed recorded status for this basic work item."
+                },
+                {
+                    "@id": "cefact:Valuation_BreakdownStatement.Changed.Recorded_Status",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007563",
+                    "unece:cefactBieDomainClass": "cefact:Valuation_BreakdownStatement.Details",
+                    "unece:cefactBusinessProcess": "Invoicing",
+                    "rdfs:comment": "A changed recorded status for this valuation breakdown statement."
+                },
+                {
+                    "@id": "cefact:WorkItem_QuantityAnalysis.Changed.Recorded_Status",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007544",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_QuantityAnalysis.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A changed recorded status for this work item quantity analysis."
+                }
+            ]
+        }
+    ]
+}

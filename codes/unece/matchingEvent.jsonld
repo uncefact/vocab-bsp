@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:matchingEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:CommunicationEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Pairing"
+            },
+            "rdfs:comment": "A matching event for this communication pairing.",
+            "rdfs:label": "matchingEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Communication_Pairing.Matching.Communication_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013501",
+                    "unece:cefactBieDomainClass": "cefact:Communication_Pairing.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A matching event for this communication pairing."
+                }
+            ]
+        }
+    ]
+}

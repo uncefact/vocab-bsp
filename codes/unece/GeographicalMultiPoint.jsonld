@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:GeographicalMultiPoint",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A collection of points, on the surface of the Earth (reference ISO 19136).",
+            "rdfs:label": "GeographicalMultiPoint",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Point.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012183",
+                    "rdfs:comment": "A collection of points, on the surface of the Earth (reference ISO 19136).",
+                    "unece:cefactBusinessProcess": "Agricultural"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:countrySubDivisionName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BirthAddress"
+                },
+                {
+                    "@id": "unece:FinancialInstitutionAddress"
+                },
+                {
+                    "@id": "unece:TradeAddress"
+                }
+            ],
+            "rdfs:comment": [
+                "A name, expressed as text, of the sub-division of a country for this trade address.",
+                "The name, expressed as text, of a country sub-division within this financial institution address.",
+                "The name, expressed as text, of the sub-division of a country for this birth address."
+            ],
+            "rdfs:label": "countrySubDivisionName",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Address.CountrySub-DivisionName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3228",
+                    "unece:cefactUNId": "UN01004549",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Address.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A name, expressed as text, of the sub-division of a country for this trade address."
+                },
+                {
+                    "@id": "cefact:Birth_Address.CountrySub-DivisionName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3228",
+                    "unece:cefactUNId": "UN01003170",
+                    "unece:cefactBieDomainClass": "cefact:Birth_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The name, expressed as text, of the sub-division of a country for this birth address."
+                },
+                {
+                    "@id": "cefact:FinancialInstitution_Address.CountrySub-DivisionName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3228",
+                    "unece:cefactUNId": "UN01004894",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The name, expressed as text, of a country sub-division within this financial institution address."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:subordinateId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "A subordinate identifier, at header level, for this trade delivery.",
+                "A subordinate identifier, at line level, for this trade delivery."
+            ],
+            "rdfs:label": "subordinateId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeDelivery.Subordinate_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1065",
+                    "unece:cefactUNId": "UN01013439",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A subordinate identifier, at line level, for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Subordinate_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1065",
+                    "unece:cefactUNId": "UN01013418",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A subordinate identifier, at header level, for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

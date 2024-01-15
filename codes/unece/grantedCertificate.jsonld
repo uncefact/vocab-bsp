@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:grantedCertificate",
+            "schema:rangeIncludes": {
+                "@id": "unece:Certificate"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:IOTDevice"
+                },
+                {
+                    "@id": "unece:Sensor"
+                }
+            ],
+            "rdfs:comment": [
+                "A product certificate granted for this monitoring IOT device.",
+                "A product certificate granted for this monitoring sensor."
+            ],
+            "rdfs:label": "grantedCertificate",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Monitoring_Sensor.Granted.Product_Certificate",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013549",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_Sensor.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A product certificate granted for this monitoring sensor."
+                },
+                {
+                    "@id": "cefact:Monitoring_IOTDevice.Granted.Product_Certificate",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013485",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_IOTDevice.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A product certificate granted for this monitoring IOT device."
+                }
+            ]
+        }
+    ]
+}

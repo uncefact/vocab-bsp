@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:subDivisionFinancialInstitution",
+            "schema:rangeIncludes": {
+                "@id": "unece:BranchFinancialInstitution"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:CreditorFinancialInstitution"
+                },
+                {
+                    "@id": "unece:DebtorFinancialInstitution"
+                }
+            ],
+            "rdfs:comment": [
+                "The branch financial institution for this creditor financial institution.",
+                "The branch financial institution for this debtor financial institution."
+            ],
+            "rdfs:label": "subDivisionFinancialInstitution",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Creditor_FinancialInstitution.Sub-Division.Branch_FinancialInstitution",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003001",
+                    "unece:cefactBieDomainClass": "cefact:Creditor_FinancialInstitution.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The branch financial institution for this creditor financial institution."
+                },
+                {
+                    "@id": "cefact:Debtor_FinancialInstitution.Sub-Division.Branch_FinancialInstitution",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002866",
+                    "unece:cefactBieDomainClass": "cefact:Debtor_FinancialInstitution.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The branch financial institution for this debtor financial institution."
+                }
+            ]
+        }
+    ]
+}

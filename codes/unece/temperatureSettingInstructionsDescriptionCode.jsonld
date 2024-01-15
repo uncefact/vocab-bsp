@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:temperatureSettingInstructionsDescriptionCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4401Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TemperatureSettingInstructions"
+            },
+            "rdfs:comment": "The code specifying a description of these temperature setting instructions.",
+            "rdfs:label": "temperatureSettingInstructionsDescriptionCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TemperatureSetting_Instructions.Description.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4401",
+                    "unece:cefactUNId": "UN01004492",
+                    "unece:cefactBieDomainClass": "cefact:TemperatureSetting_Instructions.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying a description of these temperature setting instructions."
+                }
+            ]
+        }
+    ]
+}

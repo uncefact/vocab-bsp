@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Emission",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Pollution (including noise, heat, and radiation) discharged into the environment by residential, commercial, or industrial facilities or by a means of transport.",
+            "rdfs:label": "Emission",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Calculated_Emission.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010051",
+                    "rdfs:comment": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a residential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck.",
+                    "unece:cefactBusinessProcess": "Transport"
+                }
+            ]
+        }
+    ]
+}

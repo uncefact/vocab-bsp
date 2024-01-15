@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:ConsignmentItem",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An item within a consignment of goods separately identified for transport and customs purposes.",
+            "rdfs:label": "ConsignmentItem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004103",
+                    "rdfs:comment": "An item within a supply chain consignment of goods separately identified for transport and customs purposes.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                },
+                {
+                    "@id": "cefact:Referenced_SupplyChain_ConsignmentItem.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004035",
+                    "rdfs:comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

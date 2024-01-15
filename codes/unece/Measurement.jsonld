@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Measurement",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An amount, size, or extent as established by measuring.",
+            "rdfs:label": "Measurement",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Calibrated_Measurement.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013531",
+                    "rdfs:comment": "A measurement established by a device which is tested to a calibration standard of known accuracy.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                },
+                {
+                    "@id": "cefact:Measurement.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003890",
+                    "rdfs:comment": "An amount, size, or extent as established by measuring.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

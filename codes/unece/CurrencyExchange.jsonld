@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:CurrencyExchange",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The conversion of one currency to another.",
+            "rdfs:label": "CurrencyExchange",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_CurrencyExchange.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004576",
+                    "rdfs:comment": "The conversion of one currency to another for trade purposes.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicablePeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:Period"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                },
+                {
+                    "@id": "unece:SupplyPlan"
+                }
+            ],
+            "rdfs:comment": [
+                "A period applicable to this cross-border regulatory procedure.",
+                "The period applicable for this supply chain supply plan."
+            ],
+            "rdfs:label": "applicablePeriod",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Applicable.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008967",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A period applicable to this cross-border regulatory procedure."
+                },
+                {
+                    "@id": "cefact:SupplyChain_SupplyPlan.Applicable.Specified_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011859",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_SupplyPlan.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The period applicable for this supply chain supply plan."
+                }
+            ]
+        }
+    ]
+}

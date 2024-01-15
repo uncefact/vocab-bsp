@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:changeableIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ControlSettingParameter"
+                },
+                {
+                    "@id": "unece:OperationalParameter"
+                }
+            ],
+            "rdfs:comment": [
+                "The indication whether or not this control setting parameter is changeable.",
+                "The indication whether or not this operational parameter is changeable."
+            ],
+            "rdfs:label": "changeableIndicator",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Operational_Parameter.Changeable.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013522",
+                    "unece:cefactBieDomainClass": "cefact:Operational_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The indication whether or not this operational parameter is changeable."
+                },
+                {
+                    "@id": "cefact:ControlSetting_Parameter.Changeable.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013511",
+                    "unece:cefactBieDomainClass": "cefact:ControlSetting_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The indication whether or not this control setting parameter is changeable."
+                }
+            ]
+        }
+    ]
+}

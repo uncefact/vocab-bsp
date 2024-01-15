@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TransportPerson",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A transport related person, such as a member of a crew or a passenger.",
+            "rdfs:label": "TransportPerson",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004815",
+                    "rdfs:comment": "A transport related person, such as a member of a crew or a passenger.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

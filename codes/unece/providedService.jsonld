@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:providedService",
+            "schema:rangeIncludes": {
+                "@id": "unece:Service"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LocationParty"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A transport service provided by this location party.",
+                "A transport service provided by this trade party."
+            ],
+            "rdfs:label": "providedService",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Location_Party.Provided.Transport_Service",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003674",
+                    "unece:cefactBieDomainClass": "cefact:Location_Party.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A transport service provided by this location party."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Provided.Transport_Service",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004608",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport service provided by this trade party."
+                }
+            ]
+        }
+    ]
+}

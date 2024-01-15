@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:presentationBinaryFile",
+            "schema:rangeIncludes": {
+                "@id": "unece:BinaryFile"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Product"
+            },
+            "rdfs:comment": "A binary file presentation specified for this trade product.",
+            "rdfs:label": "presentationBinaryFile",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Presentation.Specified_BinaryFile",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007272",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A binary file presentation specified for this trade product."
+                }
+            ]
+        }
+    ]
+}

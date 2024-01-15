@@ -1,0 +1,59 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:closingBookDueDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeSettlement"
+                },
+                {
+                    "@id": "unece:TradeSettlementPayment"
+                }
+            ],
+            "rdfs:comment": [
+                "A date, time, date time or other date time value of a closing book due date for this trade settlement payment.",
+                "The date, time, date time or other date time value when the book closing is due for this header trade settlement."
+            ],
+            "rdfs:label": "closingBookDueDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeSettlement.ClosingBook_Due.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012135",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time or other date time value when the book closing is due for this header trade settlement."
+                },
+                {
+                    "@id": "cefact:TradeSettlement_Payment.ClosingBook_Due.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2481",
+                    "unece:cefactUNId": "UN01011125",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlement_Payment.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A date, time, date time or other date time value of a closing book due date for this trade settlement payment."
+                }
+            ]
+        }
+    ]
+}

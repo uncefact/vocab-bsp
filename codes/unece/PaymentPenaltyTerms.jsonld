@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:PaymentPenaltyTerms",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Terms and conditions by which a payment penalty is or can be applied to a payable amount.",
+            "rdfs:label": "PaymentPenaltyTerms",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentPenaltyTerms.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004626",
+                    "rdfs:comment": "Trade terms and conditions by which a penalty is or can be applied to a payable amount.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

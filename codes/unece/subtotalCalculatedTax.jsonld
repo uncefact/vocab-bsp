@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:subtotalCalculatedTax",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeTax"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeSettlement"
+                },
+                {
+                    "@id": "unece:LineTradeSettlement"
+                }
+            ],
+            "rdfs:comment": [
+                "A tax subtotal calculated for this header trade settlement.",
+                "A tax subtotal calculated for this line trade settlement."
+            ],
+            "rdfs:label": "subtotalCalculatedTax",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeSettlement.Subtotal_Calculated.Trade_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011675",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax subtotal calculated for this header trade settlement."
+                },
+                {
+                    "@id": "cefact:Line_TradeSettlement.Subtotal_Calculated.Trade_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011809",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax subtotal calculated for this line trade settlement."
+                }
+            ]
+        }
+    ]
+}

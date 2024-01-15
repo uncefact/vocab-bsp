@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:usedCoordinateReferenceSystem",
+            "schema:rangeIncludes": {
+                "@id": "unece:CoordinateReferenceSystem"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GeographicalCoordinate"
+                },
+                {
+                    "@id": "unece:GeographicalFeature"
+                }
+            ],
+            "rdfs:comment": [
+                "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate.",
+                "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
+            ],
+            "rdfs:label": "usedCoordinateReferenceSystem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:GeographicalCoordinate.Used.CSEngineering_CoordinateReferenceSystem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013613",
+                    "unece:cefactBieDomainClass": "cefact:GeographicalCoordinate.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalFeature.Used.CSEngineering_CoordinateReferenceSystem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013619",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalFeature.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedFinancialCard",
+            "schema:rangeIncludes": {
+                "@id": "unece:FinancialCard"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeSettlement"
+                },
+                {
+                    "@id": "unece:LineTradeSettlement"
+                }
+            ],
+            "rdfs:comment": [
+                "A financial card specified in this header trade settlement.",
+                "A financial card specified in this line trade settlement."
+            ],
+            "rdfs:label": "specifiedFinancialCard",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeSettlement.Specified.TradeSettlement_FinancialCard",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011689",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A financial card specified in this header trade settlement."
+                },
+                {
+                    "@id": "cefact:Line_TradeSettlement.Specified.TradeSettlement_FinancialCard",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011820",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A financial card specified in this line trade settlement."
+                }
+            ]
+        }
+    ]
+}

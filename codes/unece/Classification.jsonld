@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Classification",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A systematic arrangement in classes or categories according to established criteria.",
+            "rdfs:label": "Classification",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Product_Classification.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002608",
+                    "rdfs:comment": "A systematic arrangement of products in classes or categories according to established criteria.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

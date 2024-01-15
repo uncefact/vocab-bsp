@@ -1,0 +1,66 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:referencedBinaryFile",
+            "schema:rangeIncludes": {
+                "@id": "unece:BinaryFile"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BreakdownStatement"
+                },
+                {
+                    "@id": "unece:WorkItem"
+                }
+            ],
+            "rdfs:comment": [
+                "A specified binary file referenced by this basic work item.",
+                "A specified binary file referenced by this grouped work item.",
+                "A specified binary file referenced by this valuation breakdown statement."
+            ],
+            "rdfs:label": "referencedBinaryFile",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Valuation_BreakdownStatement.Referenced.Specified_BinaryFile",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011936",
+                    "unece:cefactBieDomainClass": "cefact:Valuation_BreakdownStatement.Details",
+                    "unece:cefactBusinessProcess": "Invoicing",
+                    "rdfs:comment": "A specified binary file referenced by this valuation breakdown statement."
+                },
+                {
+                    "@id": "cefact:Grouped_WorkItem.Referenced.Specified_BinaryFile",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011538",
+                    "unece:cefactBieDomainClass": "cefact:Grouped_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A specified binary file referenced by this grouped work item."
+                },
+                {
+                    "@id": "cefact:Basic_WorkItem.Referenced.Specified_BinaryFile",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011537",
+                    "unece:cefactBieDomainClass": "cefact:Basic_WorkItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A specified binary file referenced by this basic work item."
+                }
+            ]
+        }
+    ]
+}

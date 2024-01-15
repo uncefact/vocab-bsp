@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:paymentTermsEventTimeReferenceFromEventCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL2475Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:PaymentTerms"
+            },
+            "rdfs:comment": "The code specifying the event from which these trade payment terms are offered for a length of time.",
+            "rdfs:label": "paymentTermsEventTimeReferenceFromEventCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentTerms.FromEvent.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2475",
+                    "unece:cefactUNId": "UN01001674",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentTerms.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The code specifying the event from which these trade payment terms are offered for a length of time."
+                }
+            ]
+        }
+    ]
+}

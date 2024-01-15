@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:definedContact",
+            "schema:rangeIncludes": {
+                "@id": "unece:Contact"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LocationParty"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A trade contact defined for this location party.",
+                "A trade contact defined for this trade party."
+            ],
+            "rdfs:label": "definedContact",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Defined.Trade_Contact",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004602",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A trade contact defined for this trade party."
+                },
+                {
+                    "@id": "cefact:Location_Party.Defined.Trade_Contact",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003669",
+                    "unece:cefactBieDomainClass": "cefact:Location_Party.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A trade contact defined for this location party."
+                }
+            ]
+        }
+    ]
+}

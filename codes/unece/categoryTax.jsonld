@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:categoryTax",
+            "schema:rangeIncludes": {
+                "@id": "unece:AppliedTax"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AllowanceCharge"
+            },
+            "rdfs:comment": [
+                "A tax category of this trade allowance charge.",
+                "The applied tax category of this applied allowance charge."
+            ],
+            "rdfs:label": "categoryTax",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Category.Trade_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004558",
+                    "unece:cefactBieDomainClass": "cefact:Trade_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tax category of this trade allowance charge."
+                },
+                {
+                    "@id": "cefact:Applied_AllowanceCharge.Category.Applied_Tax",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000195",
+                    "unece:cefactBieDomainClass": "cefact:Applied_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Pricing",
+                    "rdfs:comment": "The applied tax category of this applied allowance charge."
+                }
+            ]
+        }
+    ]
+}

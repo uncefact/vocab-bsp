@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedAccountingAccount",
+            "schema:rangeIncludes": {
+                "@id": "unece:AccountingAccount"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeTax"
+            },
+            "rdfs:comment": "A specified accounting account for this trade related tax, levy or duty.",
+            "rdfs:label": "specifiedAccountingAccount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Tax.Specified.Trade_AccountingAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004744",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Tax.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A specified accounting account for this trade related tax, levy or duty."
+                }
+            ]
+        }
+    ]
+}

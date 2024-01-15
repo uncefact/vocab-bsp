@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:maximumStackabilityApplicableQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:HandlingInstructions"
+            },
+            "rdfs:comment": "The maximum number of units which can be stacked on top of each other according to these handling instructions.",
+            "rdfs:label": "maximumStackabilityApplicableQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Handling_Instructions.MaximumStackability_Applicable.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01007179",
+                    "unece:cefactBieDomainClass": "cefact:Handling_Instructions.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
+                }
+            ]
+        }
+    ]
+}

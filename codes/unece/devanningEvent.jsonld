@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:devanningEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:TransportEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Consignment"
+            },
+            "rdfs:comment": [
+                "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery.",
+                "A transport devanning event for this supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
+            ],
+            "rdfs:label": "devanningEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.Devanning.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013183",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Devanning.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013195",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport devanning event for this supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
+                }
+            ]
+        }
+    ]
+}

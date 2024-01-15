@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:SupplyChainEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Inventory"
+                },
+                {
+                    "@id": "unece:TransportMovement"
+                }
+            ],
+            "rdfs:comment": [
+                "A supply chain event specified for this supply chain inventory.",
+                "A transport event specified for this logistics transport movement."
+            ],
+            "rdfs:label": "specifiedEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportMovement.Specified.Transport_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012569",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMovement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A transport event specified for this logistics transport movement."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Inventory.Specified.SupplyChain_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01005397",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Inventory.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A supply chain event specified for this supply chain inventory."
+                }
+            ]
+        }
+    ]
+}

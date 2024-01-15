@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:definedRange",
+            "schema:rangeIncludes": {
+                "@id": "unece:Range"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:OperationalParameter"
+            },
+            "rdfs:comment": "A defined range specified for this operational parameter.",
+            "rdfs:label": "definedRange",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Operational_Parameter.Defined.Specified_Range",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013523",
+                    "unece:cefactBieDomainClass": "cefact:Operational_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A defined range specified for this operational parameter."
+                }
+            ]
+        }
+    ]
+}

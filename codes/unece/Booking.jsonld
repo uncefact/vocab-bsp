@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Booking",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A transaction which results in the recording of an entry in an account, such as an entry in a bank account or ordering transport services.",
+            "rdfs:label": "Booking",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Financial_Booking.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013213",
+                    "rdfs:comment": "A result of a financial transaction recorded within a financial account.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

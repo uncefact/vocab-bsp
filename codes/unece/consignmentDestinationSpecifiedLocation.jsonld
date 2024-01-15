@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:consignmentDestinationSpecifiedLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:LogisticsLocation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:RegulatoryProcedure"
+            },
+            "rdfs:comment": "A consignment destination location specified for this cross-border regulatory procedure.",
+            "rdfs:label": "consignmentDestinationSpecifiedLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.ConsignmentDestination_Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006184",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A consignment destination location specified for this cross-border regulatory procedure."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportServicePriorityCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4219Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Service"
+            },
+            "rdfs:comment": "The code specifying the priority of this transport service.",
+            "rdfs:label": "transportServicePriorityCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Service.Priority.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4219",
+                    "unece:cefactUNId": "UN01004844",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Service.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the priority of this transport service."
+                }
+            ]
+        }
+    ]
+}

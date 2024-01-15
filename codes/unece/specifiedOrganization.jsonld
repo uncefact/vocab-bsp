@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedOrganization",
+            "schema:rangeIncludes": {
+                "@id": "unece:Organization"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:RequestingParty"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "The legally constituted organization specified for this trade party.",
+                "The project organization, such as a business or government body, for this requesting party."
+            ],
+            "rdfs:label": "specifiedOrganization",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Specified.Legal_Organization",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004601",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The legally constituted organization specified for this trade party."
+                },
+                {
+                    "@id": "cefact:Requesting_Party.Specified.Project_Organization",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002024",
+                    "unece:cefactBieDomainClass": "cefact:Requesting_Party.Details",
+                    "unece:cefactBusinessProcess": "Project Management",
+                    "rdfs:comment": "The project organization, such as a business or government body, for this requesting party."
+                }
+            ]
+        }
+    ]
+}

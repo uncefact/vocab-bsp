@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:relevantLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeLocation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:DeliveryTerms"
+            },
+            "rdfs:comment": "The trade location relevant for these trade delivery terms.",
+            "rdfs:label": "relevantLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_DeliveryTerms.Relevant.Trade_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01001657",
+                    "unece:cefactBieDomainClass": "cefact:Trade_DeliveryTerms.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The trade location relevant for these trade delivery terms."
+                }
+            ]
+        }
+    ]
+}

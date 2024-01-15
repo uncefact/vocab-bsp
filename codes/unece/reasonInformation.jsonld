@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:reasonInformation",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:CancellationStatus"
+                },
+                {
+                    "@id": "unece:FinancingStatus"
+                }
+            ],
+            "rdfs:comment": [
+                "Information, expressed as text, related to the reason for this cancellation status.",
+                "Information, expressed as text, related to the reason for this financing status."
+            ],
+            "rdfs:label": "reasonInformation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cancellation_Status.Reason_Information.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013200",
+                    "unece:cefactBieDomainClass": "cefact:Cancellation_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Information, expressed as text, related to the reason for this cancellation status."
+                },
+                {
+                    "@id": "cefact:Financing_Status.Reason_Information.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013266",
+                    "unece:cefactBieDomainClass": "cefact:Financing_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Information, expressed as text, related to the reason for this financing status."
+                }
+            ]
+        }
+    ]
+}

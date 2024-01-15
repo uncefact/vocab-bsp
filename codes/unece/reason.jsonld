@@ -1,0 +1,132 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:reason",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Adjustment"
+                },
+                {
+                    "@id": "unece:AllowanceCharge"
+                },
+                {
+                    "@id": "unece:CancellationStatus"
+                },
+                {
+                    "@id": "unece:DocumentStatus"
+                },
+                {
+                    "@id": "unece:FinancingStatus"
+                },
+                {
+                    "@id": "unece:LogisticsStatus"
+                },
+                {
+                    "@id": "unece:ValidationStatus"
+                }
+            ],
+            "rdfs:comment": [
+                "A reason, expressed as text, for this cancellation status.",
+                "A reason, expressed as text, for this delivery adjustment.",
+                "A reason, expressed as text, for this document status.",
+                "A reason, expressed as text, for this financial adjustment.",
+                "A reason, expressed as text, for this financing status.",
+                "A reason, expressed as text, for this logistics status.",
+                "A reason, expressed as text, for this validation status.",
+                "The reason, expressed as text, for this trade allowance charge."
+            ],
+            "rdfs:label": "reason",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cancellation_Status.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9012",
+                    "unece:cefactUNId": "UN01013199",
+                    "unece:cefactBieDomainClass": "cefact:Cancellation_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A reason, expressed as text, for this cancellation status."
+                },
+                {
+                    "@id": "cefact:Logistics_Status.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9012",
+                    "unece:cefactUNId": "UN01003752",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A reason, expressed as text, for this logistics status."
+                },
+                {
+                    "@id": "cefact:Financial_Adjustment.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003596",
+                    "unece:cefactBieDomainClass": "cefact:Financial_Adjustment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A reason, expressed as text, for this financial adjustment."
+                },
+                {
+                    "@id": "cefact:Delivery_Adjustment.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003500",
+                    "unece:cefactBieDomainClass": "cefact:Delivery_Adjustment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A reason, expressed as text, for this delivery adjustment."
+                },
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004557",
+                    "unece:cefactBieDomainClass": "cefact:Trade_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The reason, expressed as text, for this trade allowance charge."
+                },
+                {
+                    "@id": "cefact:Validation_Status.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9012",
+                    "unece:cefactUNId": "UN01013308",
+                    "unece:cefactBieDomainClass": "cefact:Validation_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A reason, expressed as text, for this validation status."
+                },
+                {
+                    "@id": "cefact:Financing_Status.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9012",
+                    "unece:cefactUNId": "UN01013265",
+                    "unece:cefactBieDomainClass": "cefact:Financing_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A reason, expressed as text, for this financing status."
+                },
+                {
+                    "@id": "cefact:Document_Status.Reason.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9012",
+                    "unece:cefactUNId": "UN01013127",
+                    "unece:cefactBieDomainClass": "cefact:Document_Status.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A reason, expressed as text, for this document status."
+                }
+            ]
+        }
+    ]
+}

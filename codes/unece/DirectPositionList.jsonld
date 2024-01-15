@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:DirectPositionList",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The list of coordinates for a physical location, expressed as a sequence of direct positions.",
+            "rdfs:label": "DirectPositionList",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_DirectPositionList.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012471",
+                    "rdfs:comment": "The specified list of coordinates for a physical location, expressed as a sequence of direct positions.",
+                    "unece:cefactBusinessProcess": "Agricultural"
+                }
+            ]
+        }
+    ]
+}

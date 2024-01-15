@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Packaging",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Any wrapping or containment, such as a box or a barrel, of goods.",
+            "rdfs:label": "Packaging",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Packaging.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004312",
+                    "rdfs:comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

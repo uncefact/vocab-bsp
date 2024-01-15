@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:borderClearanceInstructions",
+            "schema:rangeIncludes": {
+                "@id": "unece:TransportInstructions"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                }
+            ],
+            "rdfs:comment": [
+                "Border clearance instructions for this cross-border regulatory procedure.",
+                "Border clearance instructions for this supply chain consignment item."
+            ],
+            "rdfs:label": "borderClearanceInstructions",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.BorderClearance.Transport_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008971",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Border clearance instructions for this cross-border regulatory procedure."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.BorderClearance.Transport_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01009000",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Border clearance instructions for this supply chain consignment item."
+                }
+            ]
+        }
+    ]
+}

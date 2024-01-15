@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedClause",
+            "schema:rangeIncludes": {
+                "@id": "unece:Clause"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Authentication"
+            },
+            "rdfs:comment": "A document clause included in this document authentication.",
+            "rdfs:label": "includedClause",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Document_Authentication.Included.Document_Clause",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002645",
+                    "unece:cefactBieDomainClass": "cefact:Document_Authentication.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A document clause included in this document authentication."
+                }
+            ]
+        }
+    ]
+}

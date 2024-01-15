@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableTradeDelivery",
+            "schema:rangeIncludes": {
+                "@id": "unece:HeaderTradeDelivery"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeTransaction"
+            },
+            "rdfs:comment": [
+                "A trade delivery applicable to this line trade transaction.",
+                "A trade delivery header applicable to this supply chain trade transaction."
+            ],
+            "rdfs:label": "applicableTradeDelivery",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeTransaction.Applicable.Line_TradeDelivery",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011826",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeTransaction.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A trade delivery applicable to this line trade transaction."
+                },
+                {
+                    "@id": "cefact:SupplyChain_TradeTransaction.Applicable.Header_TradeDelivery",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011869",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeTransaction.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A trade delivery header applicable to this supply chain trade transaction."
+                }
+            ]
+        }
+    ]
+}

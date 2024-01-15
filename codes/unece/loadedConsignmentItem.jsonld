@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:loadedConsignmentItem",
+            "schema:rangeIncludes": {
+                "@id": "unece:ConsignmentItem"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LogisticsTransportEquipment"
+            },
+            "rdfs:comment": "A consignment item loaded onto, or into, this piece of logistics transport equipment.",
+            "rdfs:label": "loadedConsignmentItem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Loaded.SupplyChain_ConsignmentItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003787",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A consignment item loaded onto, or into, this piece of logistics transport equipment."
+                }
+            ]
+        }
+    ]
+}

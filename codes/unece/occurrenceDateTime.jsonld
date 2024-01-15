@@ -1,0 +1,105 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:occurrenceDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:BalanceOut"
+                },
+                {
+                    "@id": "unece:ChemicalTreatment"
+                },
+                {
+                    "@id": "unece:CommunicationEvent"
+                },
+                {
+                    "@id": "unece:Schedule"
+                },
+                {
+                    "@id": "unece:SupplyChainEvent"
+                }
+            ],
+            "rdfs:comment": [
+                "A date, time, date time, or other date time of an occurrence in this supply chain schedule.",
+                "A date, time, date time, or other date time value of an occurrence of this supply chain event.",
+                "The date time of the occurrence of this applied chemical treatment.",
+                "The date, time, date time, or other date time value of an occurrence of this communication event.",
+                "The date, time, date time, or other date time value of an occurrence of this header balance out.",
+                "The date, time, date time, or other date time value of an occurrence of this payment balance out."
+            ],
+            "rdfs:label": "occurrenceDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Event.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2193",
+                    "unece:cefactUNId": "UN01004293",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A date, time, date time, or other date time value of an occurrence of this supply chain event."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Schedule.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012981",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Schedule.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+                },
+                {
+                    "@id": "cefact:Applied_ChemicalTreatment.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01009027",
+                    "unece:cefactBieDomainClass": "cefact:Applied_ChemicalTreatment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date time of the occurrence of this applied chemical treatment."
+                },
+                {
+                    "@id": "cefact:Communication_Event.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2193",
+                    "unece:cefactUNId": "UN01013562",
+                    "unece:cefactBieDomainClass": "cefact:Communication_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date, time, date time, or other date time value of an occurrence of this communication event."
+                },
+                {
+                    "@id": "cefact:Header_BalanceOut.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011544",
+                    "unece:cefactBieDomainClass": "cefact:Header_BalanceOut.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time, or other date time value of an occurrence of this header balance out."
+                },
+                {
+                    "@id": "cefact:Payment_BalanceOut.Occurrence.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011834",
+                    "unece:cefactBieDomainClass": "cefact:Payment_BalanceOut.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time, or other date time value of an occurrence of this payment balance out."
+                }
+            ]
+        }
+    ]
+}

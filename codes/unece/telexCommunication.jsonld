@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:telexCommunication",
+            "schema:rangeIncludes": {
+                "@id": "unece:UniversalCommunication"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Contact"
+            },
+            "rdfs:comment": "Telegraphy (Telex) communication information for this trade contact.",
+            "rdfs:label": "telexCommunication",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Contact.Telex.Universal_Communication",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004570",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Contact.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Telegraphy (Telex) communication information for this trade contact."
+                }
+            ]
+        }
+    ]
+}

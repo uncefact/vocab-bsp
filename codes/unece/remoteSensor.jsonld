@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:remoteSensor",
+            "schema:rangeIncludes": {
+                "@id": "unece:Sensor"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:IOTDevice"
+            },
+            "rdfs:comment": "A remote sensor of this monitoring IOT device.",
+            "rdfs:label": "remoteSensor",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Monitoring_IOTDevice.Remote.Monitoring_Sensor",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013495",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_IOTDevice.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A remote sensor of this monitoring IOT device."
+                }
+            ]
+        }
+    ]
+}

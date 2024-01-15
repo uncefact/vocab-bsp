@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:mobileTelephoneCommunication",
+            "schema:rangeIncludes": {
+                "@id": "unece:UniversalCommunication"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Contact"
+                },
+                {
+                    "@id": "unece:TransportPerson"
+                }
+            ],
+            "rdfs:comment": [
+                "Mobile telephone communication information for this transport person.",
+                "The mobile telephone communication information for this trade contact."
+            ],
+            "rdfs:label": "mobileTelephoneCommunication",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Mobile_Telephone.Universal_Communication",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013149",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Mobile telephone communication information for this transport person."
+                },
+                {
+                    "@id": "cefact:Trade_Contact.Mobile_Telephone.Universal_Communication",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004566",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Contact.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The mobile telephone communication information for this trade contact."
+                }
+            ]
+        }
+    ]
+}

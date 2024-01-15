@@ -1,0 +1,153 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:associatedGeographicalObjectCharacteristic",
+            "schema:rangeIncludes": {
+                "@id": "unece:GeographicalObjectCharacteristic"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Circle"
+                },
+                {
+                    "@id": "unece:GeographicalGrid"
+                },
+                {
+                    "@id": "unece:GeographicalLine"
+                },
+                {
+                    "@id": "unece:GeographicalMultiCurve"
+                },
+                {
+                    "@id": "unece:GeographicalMultiPoint"
+                },
+                {
+                    "@id": "unece:GeographicalMultiSurface"
+                },
+                {
+                    "@id": "unece:GeographicalPoint"
+                },
+                {
+                    "@id": "unece:GeographicalSurface"
+                },
+                {
+                    "@id": "unece:LinearRing"
+                },
+                {
+                    "@id": "unece:Polygon"
+                }
+            ],
+            "rdfs:comment": [
+                "The geographical object characteristic associated with this geographical grid.",
+                "The geographical object characteristic associated with this geographical line.",
+                "The geographical object characteristic associated with this geographical multi-curve.",
+                "The geographical object characteristic associated with this geographical multi-point.",
+                "The geographical object characteristic associated with this geographical multi-surface.",
+                "The geographical object characteristic associated with this geographical point.",
+                "The geographical object characteristic associated with this geographical surface.",
+                "The geographical object characteristic associated with this linear ring.",
+                "The geographical object characteristic associated with this specified circle.",
+                "The geographical object characteristic associated with this specified polygon."
+            ],
+            "rdfs:label": "associatedGeographicalObjectCharacteristic",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalLine.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012189",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalLine.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical line."
+                },
+                {
+                    "@id": "cefact:Specified_Polygon.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012195",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Polygon.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this specified polygon."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Point.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012185",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalMultiPoint.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical multi-point."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalGrid.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012211",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalGrid.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical grid."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalSurface.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012200",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalSurface.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical surface."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Curve.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012192",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalMultiCurve.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical multi-curve."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalPoint.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012182",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalPoint.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical point."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Surface.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012197",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalMultiSurface.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this geographical multi-surface."
+                },
+                {
+                    "@id": "cefact:Specified_Circle.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013580",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Circle.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The geographical object characteristic associated with this specified circle."
+                },
+                {
+                    "@id": "cefact:Specified_LinearRing.Associated.Specified_GeographicalObjectCharacteristic",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012194",
+                    "unece:cefactBieDomainClass": "cefact:Specified_LinearRing.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The geographical object characteristic associated with this linear ring."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:settlementPeriodMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:PaymentTerms"
+            },
+            "rdfs:comment": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months.",
+            "rdfs:label": "settlementPeriodMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentTerms.SettlementPeriod.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01001675",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentTerms.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
+                }
+            ]
+        }
+    ]
+}

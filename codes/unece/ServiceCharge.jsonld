@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:ServiceCharge",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A charge made for services rendered or assessed, such as banking, freight charges, charges for a medical service such as provision of a private room, provision of a television, medical supplies, massage.",
+            "rdfs:label": "ServiceCharge",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_ServiceCharge.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003721",
+                    "rdfs:comment": "A charge made for a logistics related service.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

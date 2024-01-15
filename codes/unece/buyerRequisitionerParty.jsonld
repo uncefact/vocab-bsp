@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:buyerRequisitionerParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeAgreement"
+                },
+                {
+                    "@id": "unece:LineTradeAgreement"
+                }
+            ],
+            "rdfs:comment": [
+                "A party who is a buyer requisitioner in this header trade agreement.",
+                "A party who is a buyer requisitioner in this line trade agreement."
+            ],
+            "rdfs:label": "buyerRequisitionerParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeAgreement.Buyer_Requisitioner.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011554",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A party who is a buyer requisitioner in this header trade agreement."
+                },
+                {
+                    "@id": "cefact:Line_TradeAgreement.Buyer_Requisitioner.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011709",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A party who is a buyer requisitioner in this line trade agreement."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TradeAddress",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached.",
+            "rdfs:label": "TradeAddress",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Address.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004533",
+                    "rdfs:comment": "The location at which a particular trade related organization or person may be found or reached.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

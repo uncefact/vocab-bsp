@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:attachedSecurityTag",
+            "schema:rangeIncludes": {
+                "@id": "unece:SecurityTag"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Product"
+            },
+            "rdfs:comment": "A tag device attached to this trade product to provide protection from a peril such as theft.",
+            "rdfs:label": "attachedSecurityTag",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Attached.Product_SecurityTag",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007278",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A tag device attached to this trade product to provide protection from a peril such as theft."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:centreGeographicalPoint",
+            "schema:rangeIncludes": {
+                "@id": "unece:GeographicalPoint"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Circle"
+            },
+            "rdfs:comment": "The geographical point which defines the centre of this specified circle.",
+            "rdfs:label": "centreGeographicalPoint",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_Circle.Centre.Specified_GeographicalPoint",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013579",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Circle.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The geographical point which defines the centre of this specified circle."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:additionalDocument",
+            "schema:rangeIncludes": {
+                "@id": "unece:Document"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeAgreement"
+                },
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeAgreement"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeSettlement"
+                },
+                {
+                    "@id": "unece:SubordinateLineTradeAgreement"
+                }
+            ],
+            "rdfs:comment": [
+                "An additional document referenced in this header trade agreement.",
+                "An additional document referenced in this line trade agreement.",
+                "An additional document referenced in this line trade settlement.",
+                "An additional document referenced in this subordinate line trade agreement.",
+                "An additional document, at header level, referenced for this trade delivery.",
+                "An additional document, at line level, referenced for this trade delivery."
+            ],
+            "rdfs:label": "additionalDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SubordinateLine_TradeAgreement.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011846",
+                    "unece:cefactBieDomainClass": "cefact:SubordinateLine_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document referenced in this subordinate line trade agreement."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011631",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document, at header level, referenced for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Line_TradeAgreement.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011722",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document referenced in this line trade agreement."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011792",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document, at line level, referenced for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeAgreement.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011575",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document referenced in this header trade agreement."
+                },
+                {
+                    "@id": "cefact:Line_TradeSettlement.Additional.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011815",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "An additional document referenced in this line trade settlement."
+                }
+            ]
+        }
+    ]
+}

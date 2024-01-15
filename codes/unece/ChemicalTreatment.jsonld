@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:ChemicalTreatment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A process of subjecting an object to the action of a chemical, physical, or biological agent.",
+            "rdfs:label": "ChemicalTreatment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Applied_ChemicalTreatment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01009024",
+                    "rdfs:comment": "A process of applying a chemical, physical, or biological agent to an object.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

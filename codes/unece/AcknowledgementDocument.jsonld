@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:AcknowledgementDocument",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A document exchanged between parties for a business application level acknowledgement of the receipt of information.",
+            "rdfs:label": "AcknowledgementDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Acknowledgement_Document.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002071",
+                    "rdfs:comment": "A document exchanged between parties for a business application level acknowledgement of the receipt of information.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

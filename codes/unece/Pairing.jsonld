@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Pairing",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The process by which two potentially entities are linked.",
+            "rdfs:label": "Pairing",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Communication_Pairing.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013497",
+                    "rdfs:comment": "The process by which two potentially communicating entities are linked.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

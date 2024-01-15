@@ -1,0 +1,93 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:linearDimension",
+            "schema:rangeIncludes": {
+                "@id": "unece:Dimension"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:Package"
+                },
+                {
+                    "@id": "unece:Packaging"
+                },
+                {
+                    "@id": "unece:Product"
+                }
+            ],
+            "rdfs:comment": [
+                "Linear spatial dimensions of this trade product.",
+                "The linear spatial dimensions of this logistics package.",
+                "The linear spatial dimensions of this piece of logistics transport equipment.",
+                "The linear spatial dimensions of this supply chain consignment item.",
+                "The linear spatial dimensions of this supply chain packaging."
+            ],
+            "rdfs:label": "linearDimension",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Packaging.Linear.Spatial_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004320",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Packaging.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The linear spatial dimensions of this supply chain packaging."
+                },
+                {
+                    "@id": "cefact:Trade_Product.Linear.Spatial_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004705",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Linear spatial dimensions of this trade product."
+                },
+                {
+                    "@id": "cefact:Logistics_Package.Linear.Spatial_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003707",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The linear spatial dimensions of this logistics package."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Linear.Spatial_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003796",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The linear spatial dimensions of this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Linear.Spatial_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004136",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The linear spatial dimensions of this supply chain consignment item."
+                }
+            ]
+        }
+    ]
+}

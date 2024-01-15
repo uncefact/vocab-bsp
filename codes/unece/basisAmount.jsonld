@@ -1,0 +1,103 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:basisAmount",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AllowanceCharge"
+                },
+                {
+                    "@id": "unece:AppliedTax"
+                },
+                {
+                    "@id": "unece:PaymentDiscountTerms"
+                },
+                {
+                    "@id": "unece:PaymentPenaltyTerms"
+                },
+                {
+                    "@id": "unece:TradeTax"
+                }
+            ],
+            "rdfs:comment": [
+                "A monetary value used as a basis to calculate the discount in these trade payment discount terms.",
+                "A monetary value used as a basis to calculate these trade payment penalty terms.",
+                "A monetary value used as the basis on which this trade related tax, levy or duty is calculated.",
+                "The monetary value that is the basis on which the applied allowance charge is calculated.",
+                "The monetary value that is the basis on which this trade allowance charge is calculated.",
+                "The monetary value used as the basis in calculating the applied tax."
+            ],
+            "rdfs:label": "basisAmount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Tax.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004717",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Tax.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value used as the basis on which this trade related tax, levy or duty is calculated."
+                },
+                {
+                    "@id": "cefact:Applied_AllowanceCharge.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000193",
+                    "unece:cefactBieDomainClass": "cefact:Applied_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Pricing",
+                    "rdfs:comment": "The monetary value that is the basis on which the applied allowance charge is calculated."
+                },
+                {
+                    "@id": "cefact:Trade_PaymentPenaltyTerms.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004629",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentPenaltyTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value used as a basis to calculate these trade payment penalty terms."
+                },
+                {
+                    "@id": "cefact:Applied_Tax.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000187",
+                    "unece:cefactBieDomainClass": "cefact:Applied_Tax.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The monetary value used as the basis in calculating the applied tax."
+                },
+                {
+                    "@id": "cefact:Trade_PaymentDiscountTerms.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004620",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentDiscountTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
+                },
+                {
+                    "@id": "cefact:Trade_AllowanceCharge.Basis.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01001636",
+                    "unece:cefactBieDomainClass": "cefact:Trade_AllowanceCharge.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The monetary value that is the basis on which this trade allowance charge is calculated."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:givenName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ContactPerson"
+                },
+                {
+                    "@id": "unece:TransportPerson"
+                }
+            ],
+            "rdfs:comment": [
+                "A given name, expressed as text, for this transport person.",
+                "The name, expressed as text, given to this contact person, usually by parents at birth."
+            ],
+            "rdfs:label": "givenName",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.GivenName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3460",
+                    "unece:cefactUNId": "UN01013137",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A given name, expressed as text, for this transport person."
+                },
+                {
+                    "@id": "cefact:Contact_Person.GivenName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3460",
+                    "unece:cefactUNId": "UN01005147",
+                    "unece:cefactBieDomainClass": "cefact:Contact_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The name, expressed as text, given to this contact person, usually by parents at birth."
+                }
+            ]
+        }
+    ]
+}

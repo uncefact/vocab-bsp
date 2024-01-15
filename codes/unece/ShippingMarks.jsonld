@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:ShippingMarks",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Physical markings or labels on individual packages or transport units for shipping purposes.",
+            "rdfs:label": "ShippingMarks",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_ShippingMarks.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003741",
+                    "rdfs:comment": "Physical markings or labels on individual packages or transport units for logistics purposes.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

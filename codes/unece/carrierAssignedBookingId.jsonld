@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:carrierAssignedBookingId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LogisticsTransportEquipment"
+            },
+            "rdfs:comment": [
+                "A carrier assigned booking identifier for this piece of logistics transport equipment.",
+                "A carrier assigned booking identifier for this piece of referenced logistics transport equipment."
+            ],
+            "rdfs:label": "carrierAssignedBookingId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.CarrierAssignedBooking_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8260",
+                    "unece:cefactUNId": "UN01010099",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A carrier assigned booking identifier for this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.CarrierAssignedBooking_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "8260",
+                    "unece:cefactUNId": "UN01010137",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A carrier assigned booking identifier for this piece of referenced logistics transport equipment."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:reasonTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TransportEvent"
+            },
+            "rdfs:comment": "The code specifying the reason type for this referenced transport event.",
+            "rdfs:label": "reasonTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Transport_Event.Reason_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "9171",
+                    "unece:cefactUNId": "UN01010084",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "The code specifying the reason type for this referenced transport event."
+                }
+            ]
+        }
+    ]
+}

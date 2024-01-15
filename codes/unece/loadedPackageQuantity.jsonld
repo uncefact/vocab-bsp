@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:loadedPackageQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LogisticsTransportEquipment"
+            },
+            "rdfs:comment": [
+                "The number of packages loaded into or onto this piece of logistics transport equipment.",
+                "The number of packages loaded into or onto this piece of referenced logistics transport equipment."
+            ],
+            "rdfs:label": "loadedPackageQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.LoadedPackage.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7228",
+                    "unece:cefactUNId": "UN01003765",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of packages loaded into or onto this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.LoadedPackage.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7228",
+                    "unece:cefactUNId": "UN01008991",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of packages loaded into or onto this piece of referenced logistics transport equipment."
+                }
+            ]
+        }
+    ]
+}

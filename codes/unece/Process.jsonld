@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Process",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A naturally occurring or designed sequence of operations or events.",
+            "rdfs:label": "Process",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ProductHandling_Process.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002627",
+                    "rdfs:comment": "A naturally occurring or designed sequence of operations or events that create, transform, or touch a product, such as manufacturing, treating, packaging, and storing.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

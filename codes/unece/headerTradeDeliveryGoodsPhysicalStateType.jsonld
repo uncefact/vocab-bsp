@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:headerTradeDeliveryGoodsPhysicalStateType",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL7001Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:HeaderTradeDelivery"
+            },
+            "rdfs:comment": "A type, expressed as text, for the physical state of the goods, at header level, for this trade delivery.",
+            "rdfs:label": "headerTradeDeliveryGoodsPhysicalStateType",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeDelivery.GoodsPhysicalState_Type.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7001",
+                    "unece:cefactUNId": "UN01013425",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A type, expressed as text, for the physical state of the goods, at header level, for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

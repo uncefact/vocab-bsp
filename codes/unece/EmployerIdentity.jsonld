@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:EmployerIdentity",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Identification of a party who pays someone to do work on a regular or contractual basis.",
+            "rdfs:label": "EmployerIdentity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Employer_Identity.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003023",
+                    "rdfs:comment": "Identification of a party who pays someone to do work on a regular or contractual basis.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

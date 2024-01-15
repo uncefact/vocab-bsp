@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:totalBudgetAmount",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Project"
+            },
+            "rdfs:comment": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project.",
+            "rdfs:label": "totalBudgetAmount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Procuring_Project.Total_Budget.Amount",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000379",
+                    "unece:cefactBieDomainClass": "cefact:Procuring_Project.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project. It includes all expenses, for example, the construction amount, tax and instalment costs for the supplier’s service as well as material costs paid by the owner institution, because construction materials can be ordered separately from the construction service itself."
+                }
+            ]
+        }
+    ]
+}

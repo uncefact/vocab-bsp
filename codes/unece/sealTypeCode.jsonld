@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:sealTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4525Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Seal"
+            },
+            "rdfs:comment": "The code specifying the type of logistics seal.",
+            "rdfs:label": "sealTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Seal.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4525",
+                    "unece:cefactUNId": "UN01003716",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Seal.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the type of logistics seal."
+                }
+            ]
+        }
+    ]
+}

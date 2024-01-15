@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:DeliveryTerms",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The conditions agreed upon between the parties with regard to the delivery of goods and or services.",
+            "rdfs:label": "DeliveryTerms",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_DeliveryTerms.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01001654",
+                    "rdfs:comment": "Conditions agreed upon between the parties with regard to the delivery of goods and or services for trade purposes.",
+                    "unece:cefactBusinessProcess": "Trade"
+                }
+            ]
+        }
+    ]
+}

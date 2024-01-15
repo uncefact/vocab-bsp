@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Country",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The area of land that belongs to a nation together with its properties such as population, political organization, etc.",
+            "rdfs:label": "Country",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Country.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002552",
+                    "rdfs:comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

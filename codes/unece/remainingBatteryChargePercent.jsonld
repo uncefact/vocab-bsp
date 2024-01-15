@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:remainingBatteryChargePercent",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:IOTDevice"
+                },
+                {
+                    "@id": "unece:Sensor"
+                }
+            ],
+            "rdfs:comment": [
+                "The percentage of the remaining battery charge of this monitoring IOT device.",
+                "The percentage of the remaining battery charge of this monitoring sensor."
+            ],
+            "rdfs:label": "remainingBatteryChargePercent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Monitoring_IOTDevice.RemainingBatteryCharge.Percent",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013482",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_IOTDevice.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+                },
+                {
+                    "@id": "cefact:Monitoring_Sensor.RemainingBatteryCharge.Percent",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013544",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_Sensor.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The percentage of the remaining battery charge of this monitoring sensor."
+                }
+            ]
+        }
+    ]
+}

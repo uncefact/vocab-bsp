@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TradeLocation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A physical location or place used or referenced for trade purposes.",
+            "rdfs:label": "TradeLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Location.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01001658",
+                    "rdfs:comment": "A physical location or place used or referenced for trade purposes.",
+                    "unece:cefactBusinessProcess": "Trade"
+                }
+            ]
+        }
+    ]
+}

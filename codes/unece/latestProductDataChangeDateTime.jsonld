@@ -1,0 +1,43 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:latestProductDataChangeDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Product"
+            },
+            "rdfs:comment": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product.",
+            "rdfs:label": "latestProductDataChangeDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.FormattedLatest_ProductDataChange.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2379",
+                    "unece:cefactUNId": "UN01011529",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product."
+                }
+            ]
+        }
+    ]
+}

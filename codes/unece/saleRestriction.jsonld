@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:saleRestriction",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:CustomsValuation"
+            },
+            "rdfs:comment": "A restriction, expressed as text, imposed on the sale of the goods for this cross-border customs valuation.",
+            "rdfs:label": "saleRestriction",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_CustomsValuation.SaleRestriction.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012694",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_CustomsValuation.Details",
+                    "unece:cefactBusinessProcess": "Cross Industry Trade",
+                    "rdfs:comment": "A restriction, expressed as text, imposed on the sale of the goods for this cross-border customs valuation."
+                }
+            ]
+        }
+    ]
+}

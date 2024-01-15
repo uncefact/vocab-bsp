@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Chemical",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Any substance having a defined molecular composition.",
+            "rdfs:label": "Chemical",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Distinct_Chemical.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01002172",
+                    "rdfs:comment": "Any clearly defined substance having a defined molecular composition.",
+                    "unece:cefactBusinessProcess": "MSDS Reporting"
+                }
+            ]
+        }
+    ]
+}

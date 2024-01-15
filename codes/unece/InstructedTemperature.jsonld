@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:InstructedTemperature",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Temperature settings instructed for storage or movement of goods.",
+            "rdfs:label": "InstructedTemperature",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Instructed_Temperature.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01008871",
+                    "rdfs:comment": "Temperature settings instructed for storage or movement of goods.",
+                    "unece:cefactBusinessProcess": "Supply Chain"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:calculatedPriceTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL5375Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:CalculatedPrice"
+            },
+            "rdfs:comment": "A code specifying the type of calculated price.",
+            "rdfs:label": "calculatedPriceTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Calculated_Price.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "5375",
+                    "unece:cefactUNId": "UN01000180",
+                    "unece:cefactBieDomainClass": "cefact:Calculated_Price.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A code specifying the type of calculated price."
+                }
+            ]
+        }
+    ]
+}

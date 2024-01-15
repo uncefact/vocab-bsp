@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:exchangedDocumentRequestedResponseTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4343Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ExchangedDocument"
+            },
+            "rdfs:comment": "A code specifying a type of response requested for this exchanged document.",
+            "rdfs:label": "exchangedDocumentRequestedResponseTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Requested_ResponseType.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4343",
+                    "unece:cefactUNId": "UN01006746",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A code specifying a type of response requested for this exchanged document."
+                }
+            ]
+        }
+    ]
+}

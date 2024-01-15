@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:actualReceiptEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:SupplyChainEvent"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "The actual receipt event, at header level, for this trade delivery.",
+                "The actual receipt event, at line level, for this trade delivery."
+            ],
+            "rdfs:label": "actualReceiptEvent",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Line_TradeDelivery.Actual_Receipt.SupplyChain_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011791",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual receipt event, at line level, for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Actual_Receipt.SupplyChain_Event",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011629",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The actual receipt event, at header level, for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

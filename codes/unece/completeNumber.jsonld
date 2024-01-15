@@ -1,0 +1,60 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:completeNumber",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:TelecommunicationCommunication"
+                },
+                {
+                    "@id": "unece:UniversalCommunication"
+                }
+            ],
+            "rdfs:comment": [
+                "The text string of characters that make up the complete number for this telecommunication.",
+                "The text string of characters that make up the complete number for this universal communication."
+            ],
+            "rdfs:label": "completeNumber",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Universal_Communication.CompleteNumber.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3148",
+                    "unece:cefactUNId": "UN01001256",
+                    "unece:cefactBieDomainClass": "cefact:Universal_Communication.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The text string of characters that make up the complete number for this universal communication."
+                },
+                {
+                    "@id": "cefact:Telecommunication_Communication.CompleteNumber.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3148",
+                    "unece:cefactUNId": "UN01002045",
+                    "unece:cefactBieDomainClass": "cefact:Telecommunication_Communication.Details",
+                    "unece:cefactBusinessProcess": "Project Management",
+                    "rdfs:comment": "The text string of characters that make up the complete number for this telecommunication."
+                }
+            ]
+        }
+    ]
+}

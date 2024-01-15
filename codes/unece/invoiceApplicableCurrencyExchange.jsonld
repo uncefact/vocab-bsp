@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:invoiceApplicableCurrencyExchange",
+            "schema:rangeIncludes": {
+                "@id": "unece:CurrencyExchange"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:HeaderTradeSettlement"
+                }
+            ],
+            "rdfs:comment": [
+                "A currency exchange applicable to the invoice for this supply chain consignment.",
+                "The currency exchange applicable to the invoice in this header trade settlement."
+            ],
+            "rdfs:label": "invoiceApplicableCurrencyExchange",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeSettlement.Invoice_Applicable.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011668",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The currency exchange applicable to the invoice in this header trade settlement."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Invoice_Applicable.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004280",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A currency exchange applicable to the invoice for this supply chain consignment."
+                }
+            ]
+        }
+    ]
+}

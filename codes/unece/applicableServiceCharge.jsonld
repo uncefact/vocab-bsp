@@ -1,0 +1,105 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableServiceCharge",
+            "schema:rangeIncludes": {
+                "@id": "unece:ServiceCharge"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                },
+                {
+                    "@id": "unece:TransportMeans"
+                },
+                {
+                    "@id": "unece:TransportMovement"
+                }
+            ],
+            "rdfs:comment": [
+                "A logistics service charge applicable to this supply chain consignment item.",
+                "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
+                "A logistics service charge applicable to this trade party.",
+                "A service charge applicable to this piece of logistics transport equipment.",
+                "A service charge, such as a freight charge, applicable to this logistics means of transport.",
+                "A service charge, such as a freight charge, applicable to this logistics transport movement."
+            ],
+            "rdfs:label": "applicableServiceCharge",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportMovement.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003862",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMovement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A service charge, such as a freight charge, applicable to this logistics transport movement."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004154",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics service charge applicable to this supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportMeans.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003832",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A service charge, such as a freight charge, applicable to this logistics means of transport."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003801",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A service charge applicable to this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01009008",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics service charge applicable to this trade party."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Applicable.Logistics_ServiceCharge",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004285",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
+                }
+            ]
+        }
+    ]
+}

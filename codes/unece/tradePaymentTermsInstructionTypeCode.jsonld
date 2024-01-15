@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:tradePaymentTermsInstructionTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4279Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:PaymentTerms"
+            },
+            "rdfs:comment": "A code specifying a type of instruction for these trade payment terms.",
+            "rdfs:label": "tradePaymentTermsInstructionTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_PaymentTerms.Instruction_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4279",
+                    "unece:cefactUNId": "UN01004638",
+                    "unece:cefactBieDomainClass": "cefact:Trade_PaymentTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying a type of instruction for these trade payment terms."
+                }
+            ]
+        }
+    ]
+}

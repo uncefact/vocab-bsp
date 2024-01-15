@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Service",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Work or the doing of work for another or community to include utilities and transport.",
+            "rdfs:label": "Service",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Service.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004837",
+                    "rdfs:comment": "A service associated with a transport movement.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                },
+                {
+                    "@id": "cefact:ReferencedTransport_Service.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010074",
+                    "rdfs:comment": "A referenced service associated with a specified event during transport movement.",
+                    "unece:cefactBusinessProcess": "Transport"
+                }
+            ]
+        }
+    ]
+}

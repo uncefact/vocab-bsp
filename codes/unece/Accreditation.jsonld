@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Accreditation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An official recognition awarded to a person, organisation or thing, such as a building or product, to certify that a certain level of attainment has been achieved.",
+            "rdfs:label": "Accreditation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Certified_Accreditation.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01010056",
+                    "rdfs:comment": "A certified recognition that provides evidence of a level of competency in a given area, such as certifying a level of skill in a trade.",
+                    "unece:cefactBusinessProcess": "Transport"
+                }
+            ]
+        }
+    ]
+}

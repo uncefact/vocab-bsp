@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Material",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Something inanimate that occupies space and possesses mass.",
+            "rdfs:label": "Material",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TransportWaste_Material.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013160",
+                    "rdfs:comment": "Any materials unused and rejected as unwanted during a transport movement.",
+                    "unece:cefactBusinessProcess": "Transport"
+                },
+                {
+                    "@id": "cefact:Radioactive_Material.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01006194",
+                    "rdfs:comment": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of particles or gamma rays.",
+                    "unece:cefactBusinessProcess": "Cross-Border"
+                }
+            ]
+        }
+    ]
+}

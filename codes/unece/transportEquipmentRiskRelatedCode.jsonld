@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportEquipmentRiskRelatedCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:RiskAnalysisResult"
+            },
+            "rdfs:comment": "A code specifying a transport equipment related risk for this logistics risk analysis result.",
+            "rdfs:label": "transportEquipmentRiskRelatedCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_RiskAnalysisResult.TransportEquipmentRisk_Related.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013046",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_RiskAnalysisResult.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying a transport equipment related risk for this logistics risk analysis result."
+                }
+            ]
+        }
+    ]
+}

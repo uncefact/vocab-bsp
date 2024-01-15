@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:additionalDescription",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:PaymentTradeSettlement"
+                },
+                {
+                    "@id": "unece:Product"
+                }
+            ],
+            "rdfs:comment": [
+                "An additional textual description for this trade product.",
+                "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
+            ],
+            "rdfs:label": "additionalDescription",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Additional_Description.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01007253",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "An additional textual description for this trade product."
+                },
+                {
+                    "@id": "cefact:Payment_TradeSettlement.Additional_Description.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003272",
+                    "unece:cefactBieDomainClass": "cefact:Payment_TradeSettlement.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
+                }
+            ]
+        }
+    ]
+}

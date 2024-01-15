@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:attainedQualification",
+            "schema:rangeIncludes": {
+                "@id": "unece:Qualification"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AuthoritativeSignatoryPerson"
+                },
+                {
+                    "@id": "unece:TransportPerson"
+                }
+            ],
+            "rdfs:comment": [
+                "An academic qualification attained by this authoritative signatory person.",
+                "An academic qualification attained by this transport person."
+            ],
+            "rdfs:label": "attainedQualification",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Attained.Academic_Qualification",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013142",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An academic qualification attained by this transport person."
+                },
+                {
+                    "@id": "cefact:AuthoritativeSignatory_Person.Attained.Academic_Qualification",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002515",
+                    "unece:cefactBieDomainClass": "cefact:AuthoritativeSignatory_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An academic qualification attained by this authoritative signatory person."
+                }
+            ]
+        }
+    ]
+}

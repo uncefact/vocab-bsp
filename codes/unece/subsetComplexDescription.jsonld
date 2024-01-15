@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:subsetComplexDescription",
+            "schema:rangeIncludes": {
+                "@id": "unece:ComplexDescription"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ComplexDescription"
+            },
+            "rdfs:comment": "The complex description subset for this work item complex description.",
+            "rdfs:label": "subsetComplexDescription",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_ComplexDescription.Subset.WorkItem_ComplexDescription",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000072",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_ComplexDescription.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The complex description subset for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                }
+            ]
+        }
+    ]
+}

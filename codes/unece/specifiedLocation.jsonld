@@ -1,0 +1,90 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:LogisticsLocation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Inventory"
+                },
+                {
+                    "@id": "unece:LogisticsStatus"
+                },
+                {
+                    "@id": "unece:SupplyPlan"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A location specified for this logistics status.",
+                "A location specified for this stores inventory item.",
+                "A location specified for this supply chain supply plan.",
+                "A logistics related location or place specified for this trade party.",
+                "The location specified for this supply chain inventory."
+            ],
+            "rdfs:label": "specifiedLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Party.Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004610",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics related location or place specified for this trade party."
+                },
+                {
+                    "@id": "cefact:SupplyChain_SupplyPlan.Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004331",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_SupplyPlan.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A location specified for this supply chain supply plan."
+                },
+                {
+                    "@id": "cefact:StoresItem_Inventory.Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013194",
+                    "unece:cefactBieDomainClass": "cefact:StoresItem_Inventory.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A location specified for this stores inventory item."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Inventory.Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004310",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Inventory.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The location specified for this supply chain inventory."
+                },
+                {
+                    "@id": "cefact:Logistics_Status.Specified.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003755",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Status.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A location specified for this logistics status."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specificAccreditation",
+            "schema:rangeIncludes": {
+                "@id": "unece:Accreditation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TransportPerson"
+            },
+            "rdfs:comment": "A certified accreditation specific to this transport person.",
+            "rdfs:label": "specificAccreditation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Specific.Certified_Accreditation",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010155",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A certified accreditation specific to this transport person."
+                }
+            ]
+        }
+    ]
+}

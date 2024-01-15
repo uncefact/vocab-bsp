@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Marketplace",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
+            "rdfs:label": "Marketplace",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_Marketplace.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01009952",
+                    "rdfs:comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
+                    "unece:cefactBusinessProcess": "Invoicing"
+                }
+            ]
+        }
+    ]
+}

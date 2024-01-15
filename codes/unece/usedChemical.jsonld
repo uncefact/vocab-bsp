@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:usedChemical",
+            "schema:rangeIncludes": {
+                "@id": "unece:Chemical"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ChemicalTreatment"
+            },
+            "rdfs:comment": "A chemical used during this applied chemical treatment.",
+            "rdfs:label": "usedChemical",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Applied_ChemicalTreatment.Used.Distinct_Chemical",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01009029",
+                    "unece:cefactBieDomainClass": "cefact:Applied_ChemicalTreatment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A chemical used during this applied chemical treatment."
+                }
+            ]
+        }
+    ]
+}

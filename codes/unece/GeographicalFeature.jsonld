@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:GeographicalFeature",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Distinctive or characteristic part of a geographical object.",
+            "rdfs:label": "GeographicalFeature",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalFeature.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012168",
+                    "rdfs:comment": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes.",
+                    "unece:cefactBusinessProcess": "Agricultural"
+                }
+            ]
+        }
+    ]
+}

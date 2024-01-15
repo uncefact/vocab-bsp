@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TestSpecificationReport",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A report that lists each test, its attributes, wafer sort and final test, such as test name, electrical conditions, or sort number.",
+            "rdfs:label": "TestSpecificationReport",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Certification_TestSpecificationReport.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01009034",
+                    "rdfs:comment": "A report that specifies a certification test and its attributes.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

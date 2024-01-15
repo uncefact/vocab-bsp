@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:AssociatedTransportEquipment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
+            "rdfs:label": "AssociatedTransportEquipment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Associated_TransportEquipment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004883",
+                    "rdfs:comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

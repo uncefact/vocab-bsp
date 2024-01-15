@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:transportInstructionsDescriptionCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4401Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TransportInstructions"
+            },
+            "rdfs:comment": "The code specifying a description of these transport instructions.",
+            "rdfs:label": "transportInstructionsDescriptionCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Instructions.Description.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4401",
+                    "unece:cefactUNId": "UN01004814",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Instructions.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying a description of these transport instructions."
+                }
+            ]
+        }
+    ]
+}

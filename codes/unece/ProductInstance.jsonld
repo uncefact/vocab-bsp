@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:ProductInstance",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "An instance of an individual product or batch of similar products produced by human or mechanical effort or by a natural process.",
+            "rdfs:label": "ProductInstance",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_ProductInstance.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01004651",
+                    "rdfs:comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

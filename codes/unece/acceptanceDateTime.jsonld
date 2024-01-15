@@ -1,0 +1,60 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:acceptanceDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                }
+            ],
+            "rdfs:comment": [
+                "The date, time, date time, or other date time value for the acceptance of this exchanged document.",
+                "The date, time, date time, or other date time value of the acceptance of this referenced document."
+            ],
+            "rdfs:label": "acceptanceDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Acceptance.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2097",
+                    "unece:cefactUNId": "UN01003556",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date, time, date time, or other date time value for the acceptance of this exchanged document."
+                },
+                {
+                    "@id": "cefact:Referenced_Document.Acceptance.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2097",
+                    "unece:cefactUNId": "UN01004001",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The date, time, date time, or other date time value of the acceptance of this referenced document."
+                }
+            ]
+        }
+    ]
+}

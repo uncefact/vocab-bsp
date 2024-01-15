@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:associatedGeographicalFeature",
+            "schema:rangeIncludes": {
+                "@id": "unece:GeographicalFeature"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:CommunicationEvent"
+                },
+                {
+                    "@id": "unece:LogisticsLocation"
+                },
+                {
+                    "@id": "unece:TransportEvent"
+                }
+            ],
+            "rdfs:comment": [
+                "A geographical feature associated with this communication event.",
+                "A geographical feature associated with this logistics location.",
+                "A geographical feature associated with this transport event."
+            ],
+            "rdfs:label": "associatedGeographicalFeature",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Communication_Event.Associated.Specified_GeographicalFeature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013570",
+                    "unece:cefactBieDomainClass": "cefact:Communication_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A geographical feature associated with this communication event."
+                },
+                {
+                    "@id": "cefact:Logistics_Location.Associated.Specified_GeographicalFeature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013608",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Location.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A geographical feature associated with this logistics location."
+                },
+                {
+                    "@id": "cefact:Transport_Event.Associated.Specified_GeographicalFeature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013587",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A geographical feature associated with this transport event."
+                }
+            ]
+        }
+    ]
+}

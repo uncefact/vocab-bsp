@@ -1,0 +1,57 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:lineOfCreditSpecifiedFinancialAccount",
+            "schema:rangeIncludes": {
+                "@id": "unece:FinancingFinancialAccount"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancingSummaryDocument"
+                },
+                {
+                    "@id": "unece:RequestingParty"
+                }
+            ],
+            "rdfs:comment": [
+                "The financing financial account, used for managing the line of credit, specified for this financing summary document.",
+                "The financing financial account, used for managing the line of credit, specified for this requesting party."
+            ],
+            "rdfs:label": "lineOfCreditSpecifiedFinancialAccount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancingSummary_Document.LineOfCredit_Specified.Financing_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013251",
+                    "unece:cefactBieDomainClass": "cefact:FinancingSummary_Document.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
+                },
+                {
+                    "@id": "cefact:Requesting_Party.LineOfCredit_Specified.Financing_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013293",
+                    "unece:cefactBieDomainClass": "cefact:Requesting_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The financing financial account, used for managing the line of credit, specified for this requesting party."
+                }
+            ]
+        }
+    ]
+}

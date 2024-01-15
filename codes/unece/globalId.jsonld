@@ -1,0 +1,131 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:globalId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:Document"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                },
+                {
+                    "@id": "unece:Package"
+                },
+                {
+                    "@id": "unece:Product"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A global identifier for this supply chain consignment item.",
+                "A globally unique identifier of this trade party.",
+                "A unique global identifier for this referenced document.",
+                "A unique global identifier for this referenced product.",
+                "A unique global identifier for this trade product.",
+                "The global identifier for this referenced logistics package.",
+                "The unique global identifier for this exchanged document.",
+                "The unique global identifier for this logistics package."
+            ],
+            "rdfs:label": "globalId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1004",
+                    "unece:cefactUNId": "UN01003574",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The unique global identifier for this exchanged document."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3039",
+                    "unece:cefactUNId": "UN01004596",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A globally unique identifier of this trade party."
+                },
+                {
+                    "@id": "cefact:Referenced_Product.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7135",
+                    "unece:cefactUNId": "UN01004029",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A unique global identifier for this referenced product."
+                },
+                {
+                    "@id": "cefact:Referenced_Document.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1004",
+                    "unece:cefactUNId": "UN01003992",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A unique global identifier for this referenced document."
+                },
+                {
+                    "@id": "cefact:Logistics_Package.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1438",
+                    "unece:cefactUNId": "UN01003701",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unique global identifier for this logistics package."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_Package.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1438",
+                    "unece:cefactUNId": "UN01006796",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The global identifier for this referenced logistics package."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012575",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A global identifier for this supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Trade_Product.Global_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "7135",
+                    "unece:cefactUNId": "UN01004681",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A unique global identifier for this trade product."
+                }
+            ]
+        }
+    ]
+}

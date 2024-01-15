@@ -1,0 +1,81 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedFinancialAccount",
+            "schema:rangeIncludes": {
+                "@id": "unece:CreditorFinancialAccount"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancingSummaryDocument"
+                },
+                {
+                    "@id": "unece:PaymentMeans"
+                },
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                },
+                {
+                    "@id": "unece:RequestingParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A creditor financial account specified for this trade settlement payment means.",
+                "A debtor financial account specified for this cross-border regulatory procedure.",
+                "The creditor financial account, used for crediting, specified for this financing summary document.",
+                "The creditor financial account, used for crediting, specified for this requesting party."
+            ],
+            "rdfs:label": "specifiedFinancialAccount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancingSummary_Document.Specified.Creditor_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013252",
+                    "unece:cefactBieDomainClass": "cefact:FinancingSummary_Document.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The creditor financial account, used for crediting, specified for this financing summary document."
+                },
+                {
+                    "@id": "cefact:Requesting_Party.Specified.Creditor_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013294",
+                    "unece:cefactBieDomainClass": "cefact:Requesting_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The creditor financial account, used for crediting, specified for this requesting party."
+                },
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Specified.Debtor_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006181",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A debtor financial account specified for this cross-border regulatory procedure."
+                },
+                {
+                    "@id": "cefact:TradeSettlement_PaymentMeans.Specified.Creditor_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013300",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlement_PaymentMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A creditor financial account specified for this trade settlement payment means."
+                }
+            ]
+        }
+    ]
+}

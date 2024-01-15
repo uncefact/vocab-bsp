@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:buildingNumber",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancialInstitutionAddress"
+                },
+                {
+                    "@id": "unece:TradeAddress"
+                }
+            ],
+            "rdfs:comment": [
+                "The building number, expressed as text, in this trade address.",
+                "The number, expressed as text, of the building on a street for this financial institution address."
+            ],
+            "rdfs:label": "buildingNumber",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancialInstitution_Address.BuildingNumber.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003181",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The number, expressed as text, of the building on a street for this financial institution address."
+                },
+                {
+                    "@id": "cefact:Trade_Address.BuildingNumber.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01006053",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Address.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The building number, expressed as text, in this trade address."
+                }
+            ]
+        }
+    ]
+}

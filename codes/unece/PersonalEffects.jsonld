@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:PersonalEffects",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Privately owned articles for personal use by an individual.",
+            "rdfs:label": "PersonalEffects",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_PersonalEffects.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013184",
+                    "rdfs:comment": "Specified privately owned articles for personal use by an individual.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

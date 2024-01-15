@@ -1,0 +1,90 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedPerson",
+            "schema:rangeIncludes": {
+                "@id": "unece:AuthoritativeSignatoryPerson"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Contact"
+                },
+                {
+                    "@id": "unece:LocationParty"
+                },
+                {
+                    "@id": "unece:RequestingParty"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                }
+            ],
+            "rdfs:comment": [
+                "A contact person specified for this trade party.",
+                "A person specified to sign on behalf of this trade party.",
+                "A transport related person specified for this location party.",
+                "The contact person specified for this trade contact.",
+                "The project person specified for this requesting party."
+            ],
+            "rdfs:label": "specifiedPerson",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Requesting_Party.Specified.Project_Person",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002025",
+                    "unece:cefactBieDomainClass": "cefact:Requesting_Party.Details",
+                    "unece:cefactBusinessProcess": "Project Management",
+                    "rdfs:comment": "The project person specified for this requesting party."
+                },
+                {
+                    "@id": "cefact:Location_Party.Specified.Transport_Person",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003668",
+                    "unece:cefactBieDomainClass": "cefact:Location_Party.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A transport related person specified for this location party."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Specified.Contact_Person",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013301",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A contact person specified for this trade party."
+                },
+                {
+                    "@id": "cefact:Trade_Contact.Specified.Contact_Person",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008317",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Contact.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The contact person specified for this trade contact."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Specified.AuthoritativeSignatory_Person",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006142",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A person specified to sign on behalf of this trade party."
+                }
+            ]
+        }
+    ]
+}

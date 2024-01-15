@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:definedParameter",
+            "schema:rangeIncludes": {
+                "@id": "unece:OperationalParameter"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Sensor"
+            },
+            "rdfs:comment": [
+                "A control setting parameter defined for this monitoring sensor.",
+                "An operational parameter defined for this monitoring sensor."
+            ],
+            "rdfs:label": "definedParameter",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Monitoring_Sensor.Defined.ControlSetting_Parameter",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013547",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_Sensor.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A control setting parameter defined for this monitoring sensor."
+                },
+                {
+                    "@id": "cefact:Monitoring_Sensor.Defined.Operational_Parameter",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013548",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_Sensor.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "An operational parameter defined for this monitoring sensor."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:payeePartyFinancialAccount",
+            "schema:rangeIncludes": {
+                "@id": "unece:CreditorFinancialAccount"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:PaymentMeans"
+            },
+            "rdfs:comment": "A creditor financial account of the payee party for this trade settlement payment means.",
+            "rdfs:label": "payeePartyFinancialAccount",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlement_PaymentMeans.Payee_Party.Creditor_FinancialAccount",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004519",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlement_PaymentMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A creditor financial account of the payee party for this trade settlement payment means."
+                }
+            ]
+        }
+    ]
+}

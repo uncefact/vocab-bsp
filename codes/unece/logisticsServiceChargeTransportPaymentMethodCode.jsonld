@@ -1,0 +1,42 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:logisticsServiceChargeTransportPaymentMethodCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL4215Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ServiceCharge"
+            },
+            "rdfs:comment": "The code specifying the transport payment method for this logistics service charge.",
+            "rdfs:label": "logisticsServiceChargeTransportPaymentMethodCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_ServiceCharge.TransportPaymentMethod.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "4215",
+                    "unece:cefactUNId": "UN01003735",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_ServiceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the transport payment method for this logistics service charge."
+                }
+            ]
+        }
+    ]
+}

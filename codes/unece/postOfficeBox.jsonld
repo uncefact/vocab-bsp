@@ -1,0 +1,60 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:postOfficeBox",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:FinancialInstitutionAddress"
+                },
+                {
+                    "@id": "unece:TradeAddress"
+                }
+            ],
+            "rdfs:comment": [
+                "The post office box, expressed as text, for this financial institution address.",
+                "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address."
+            ],
+            "rdfs:label": "postOfficeBox",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancialInstitution_Address.PostOfficeBox.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3042",
+                    "unece:cefactUNId": "UN01004892",
+                    "unece:cefactBieDomainClass": "cefact:FinancialInstitution_Address.Details",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation",
+                    "rdfs:comment": "The post office box, expressed as text, for this financial institution address."
+                },
+                {
+                    "@id": "cefact:Trade_Address.PostOfficeBox.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3042",
+                    "unece:cefactUNId": "UN01004536",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Address.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicationSpecifiedParameter",
+            "schema:rangeIncludes": {
+                "@id": "unece:DocumentContextParameter"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Context"
+            },
+            "rdfs:comment": "An application context parameter specified for this exchanged document context.",
+            "rdfs:label": "applicationSpecifiedParameter",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ExchangedDocument_Context.Application_Specified.DocumentContext_Parameter",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003545",
+                    "unece:cefactBieDomainClass": "cefact:ExchangedDocument_Context.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An application context parameter specified for this exchanged document context."
+                }
+            ]
+        }
+    ]
+}

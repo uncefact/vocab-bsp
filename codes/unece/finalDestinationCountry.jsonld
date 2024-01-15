@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:finalDestinationCountry",
+            "schema:rangeIncludes": {
+                "@id": "unece:Country"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "The country of final destination, at header level, for this header trade delivery.",
+                "The country of final destination, at line level, for line trade delivery.",
+                "The final destination country for this supply chain consignment."
+            ],
+            "rdfs:label": "finalDestinationCountry",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeDelivery.FinalDestination.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012124",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The country of final destination, at header level, for this header trade delivery."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Final_Destination.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004271",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The final destination country for this supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.FinalDestination.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011781",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The country of final destination, at line level, for line trade delivery."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:carrierAcceptanceDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Consignment"
+            },
+            "rdfs:comment": [
+                "The date, time, date time or other date time value when this referenced supply chain consignment will be, or has been, accepted by the carrier.",
+                "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
+            ],
+            "rdfs:label": "carrierAcceptanceDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.CarrierAcceptance.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2127",
+                    "unece:cefactUNId": "UN01011052",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time or other date time value when this referenced supply chain consignment will be, or has been, accepted by the carrier."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.CarrierAcceptance.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2127",
+                    "unece:cefactUNId": "UN01004170",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
+                }
+            ]
+        }
+    ]
+}

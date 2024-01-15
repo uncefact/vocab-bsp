@@ -1,0 +1,70 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:partialDeliveryAllowedIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:DeliveryTerms"
+                },
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                }
+            ],
+            "rdfs:comment": [
+                "The indication of whether or not these trade delivery terms allow a partial delivery.",
+                "The indication, at header level, of whether or not this trade delivery can be partially delivered.",
+                "The indication, at line level, of whether or not this trade delivery can be partially delivered."
+            ],
+            "rdfs:label": "partialDeliveryAllowedIndicator",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeDelivery.PartialDeliveryAllowed.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011605",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication, at header level, of whether or not this trade delivery can be partially delivered."
+                },
+                {
+                    "@id": "cefact:Trade_DeliveryTerms.PartialDeliveryAllowed.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012763",
+                    "unece:cefactBieDomainClass": "cefact:Trade_DeliveryTerms.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication of whether or not these trade delivery terms allow a partial delivery."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.PartialDeliveryAllowed.Indicator",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01011756",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The indication, at line level, of whether or not this trade delivery can be partially delivered."
+                }
+            ]
+        }
+    ]
+}

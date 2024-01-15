@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:BranchFinancialInstitution",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A sub-division of a bank, building society, credit union, stock brokerage, or similar business; established primarily to provide financial services and financial transactions.",
+            "rdfs:label": "BranchFinancialInstitution",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Branch_FinancialInstitution.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003138",
+                    "rdfs:comment": "A sub-division of a bank, building society, credit union, stock brokerage, or similar business; established primarily to provide financial services and financial transactions.",
+                    "unece:cefactBusinessProcess": "Customer to bank payment initiation"
+                }
+            ]
+        }
+    ]
+}

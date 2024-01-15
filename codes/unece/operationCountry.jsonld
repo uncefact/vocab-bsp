@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:operationCountry",
+            "schema:rangeIncludes": {
+                "@id": "unece:Country"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Process"
+            },
+            "rdfs:comment": "The trade country where the operation of this product handling process occurs.",
+            "rdfs:label": "operationCountry",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ProductHandling_Process.Operation.Trade_Country",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002631",
+                    "unece:cefactBieDomainClass": "cefact:ProductHandling_Process.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The trade country where the operation of this product handling process occurs."
+                }
+            ]
+        }
+    ]
+}

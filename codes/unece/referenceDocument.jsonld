@@ -1,0 +1,81 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:referenceDocument",
+            "schema:rangeIncludes": {
+                "@id": "unece:Document"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AcknowledgementDocument"
+                },
+                {
+                    "@id": "unece:DocumentLineDocument"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                },
+                {
+                    "@id": "unece:TradeLineItem"
+                }
+            ],
+            "rdfs:comment": [
+                "A document referenced by this acknowledgement document.",
+                "A document referenced for this supply chain trade line item.",
+                "Other documents referenced by this exchanged document.",
+                "The acknowledgement document referenced in this document line."
+            ],
+            "rdfs:label": "referenceDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Exchanged_Document.Reference.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002498",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Other documents referenced by this exchanged document."
+                },
+                {
+                    "@id": "cefact:DocumentLine_Document.Reference.Acknowledgement_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011478",
+                    "unece:cefactBieDomainClass": "cefact:DocumentLine_Document.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The acknowledgement document referenced in this document line."
+                },
+                {
+                    "@id": "cefact:Acknowledgement_Document.Reference.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002650",
+                    "unece:cefactBieDomainClass": "cefact:Acknowledgement_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A document referenced by this acknowledgement document."
+                },
+                {
+                    "@id": "cefact:SupplyChain_TradeLineItem.Reference.Referenced_Document",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011126",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeLineItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A document referenced for this supply chain trade line item."
+                }
+            ]
+        }
+    ]
+}

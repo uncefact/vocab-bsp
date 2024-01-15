@@ -1,0 +1,102 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableDangerousGoods",
+            "schema:rangeIncludes": {
+                "@id": "unece:DangerousGoods"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:Product"
+                },
+                {
+                    "@id": "unece:RegulatedGoods"
+                }
+            ],
+            "rdfs:comment": [
+                "Dangerous goods applicable to the transport of this supply chain consignment.",
+                "Dangerous goods transport details applicable to this referenced supply chain consignment item.",
+                "Dangerous goods transport details applicable to this supply chain consignment item.",
+                "The transport dangerous goods details, at line level, applicable to this trade delivery.",
+                "Transport dangerous goods information applicable for this trade product.",
+                "Transport dangerous goods information applicable to these logistics regulated goods."
+            ],
+            "rdfs:label": "applicableDangerousGoods",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01007280",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Transport dangerous goods information applicable for this trade product."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006205",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Cross-Border",
+                    "rdfs:comment": "Dangerous goods applicable to the transport of this supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Referenced_SupplyChain_ConsignmentItem.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011531",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "Dangerous goods transport details applicable to this referenced supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Logistics_RegulatedGoods.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003712",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_RegulatedGoods.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Transport dangerous goods information applicable to these logistics regulated goods."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004131",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Dangerous goods transport details applicable to this supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.Applicable.Transport_DangerousGoods",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011798",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The transport dangerous goods details, at line level, applicable to this trade delivery."
+                }
+            ]
+        }
+    ]
+}

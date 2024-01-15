@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:relatedBooking",
+            "schema:rangeIncludes": {
+                "@id": "unece:Booking"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:FinancingSummaryDocument"
+            },
+            "rdfs:comment": "The financial booking related to this financing summary document.",
+            "rdfs:label": "relatedBooking",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:FinancingSummary_Document.Related.Financial_Booking",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013250",
+                    "unece:cefactBieDomainClass": "cefact:FinancingSummary_Document.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The financial booking related to this financing summary document."
+                }
+            ]
+        }
+    ]
+}

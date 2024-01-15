@@ -1,0 +1,70 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:customsId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ExchangedDocument"
+                }
+            ],
+            "rdfs:comment": [
+                "A unique identifier, for customs purposes, for this consignment.",
+                "A unique identifier, for customs purposes, for this exchanged document.",
+                "The identifier, for customs purposes, for this referenced supply chain consignment."
+            ],
+            "rdfs:label": "customsId",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_SupplyChain_Consignment.Customs_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1202",
+                    "unece:cefactUNId": "UN01011053",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The identifier, for customs purposes, for this referenced supply chain consignment."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Customs_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1202",
+                    "unece:cefactUNId": "UN01004163",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A unique identifier, for customs purposes, for this consignment."
+                },
+                {
+                    "@id": "cefact:Exchanged_Document.Customs_Identification.Identifier",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "1004",
+                    "unece:cefactUNId": "UN01003572",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A unique identifier, for customs purposes, for this exchanged document."
+                }
+            ]
+        }
+    ]
+}

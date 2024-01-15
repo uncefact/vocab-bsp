@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableCurrencyExchange",
+            "schema:rangeIncludes": {
+                "@id": "unece:CurrencyExchange"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:CustomsValuation"
+                },
+                {
+                    "@id": "unece:RegulatoryProcedure"
+                }
+            ],
+            "rdfs:comment": [
+                "A currency exchange applicable to this supply chain consignment.",
+                "The applicable currency exchange for this cross-border regulatory procedure.",
+                "The trade related currency exchange applicable to this cross-border customs valuation."
+            ],
+            "rdfs:label": "applicableCurrencyExchange",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_CustomsValuation.Applicable.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003497",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_CustomsValuation.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The trade related currency exchange applicable to this cross-border customs valuation."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Applicable.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004279",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A currency exchange applicable to this supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Applicable.Trade_CurrencyExchange",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01006185",
+                    "unece:cefactBieDomainClass": "cefact:Cross-Border_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The applicable currency exchange for this cross-border regulatory procedure."
+                }
+            ]
+        }
+    ]
+}

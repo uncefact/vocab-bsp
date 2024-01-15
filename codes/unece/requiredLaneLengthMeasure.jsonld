@@ -1,0 +1,59 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:requiredLaneLengthMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:TransportMeans"
+                }
+            ],
+            "rdfs:comment": [
+                "The measure of the external length required in a lane for this logistics transport means.",
+                "The measure of the length required in a lane for this piece of logistics transport equipment."
+            ],
+            "rdfs:label": "requiredLaneLengthMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.RequiredLaneLength.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6046",
+                    "unece:cefactUNId": "UN01003763",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the length required in a lane for this piece of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportMeans.RequiredLaneLength.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003829",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMeans.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the external length required in a lane for this logistics transport means."
+                }
+            ]
+        }
+    ]
+}

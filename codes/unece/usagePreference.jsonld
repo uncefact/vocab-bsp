@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:usagePreference",
+            "schema:rangeIncludes": {
+                "@id": "unece:Preference"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TelecommunicationCommunication"
+            },
+            "rdfs:comment": "The specified preference for the usage of this telecommunication method.",
+            "rdfs:label": "usagePreference",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Telecommunication_Communication.Usage.Specified_Preference",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01002051",
+                    "unece:cefactBieDomainClass": "cefact:Telecommunication_Communication.Details",
+                    "unece:cefactBusinessProcess": "Project Management",
+                    "rdfs:comment": "The specified preference for the usage of this telecommunication method."
+                }
+            ]
+        }
+    ]
+}

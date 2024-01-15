@@ -1,0 +1,178 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:valueMeasure",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Characteristic"
+                },
+                {
+                    "@id": "unece:CommunicationEvent"
+                },
+                {
+                    "@id": "unece:Condition"
+                },
+                {
+                    "@id": "unece:ControlSettingParameter"
+                },
+                {
+                    "@id": "unece:Dimension"
+                },
+                {
+                    "@id": "unece:Measurement"
+                },
+                {
+                    "@id": "unece:OperationalParameter"
+                },
+                {
+                    "@id": "unece:Sensor"
+                },
+                {
+                    "@id": "unece:SpecifiedTemperature"
+                },
+                {
+                    "@id": "unece:TransportEvent"
+                },
+                {
+                    "@id": "unece:TransportSettingTemperature"
+                }
+            ],
+            "rdfs:comment": [
+                "A measure of a value for this product characteristic.",
+                "The measure of a value for this communication event.",
+                "The measure of a value for this transport event.",
+                "The measure of the value for this monitoring sensor.",
+                "The measure of the value for this product characteristic condition.",
+                "The measure of the value of this spatial dimension.",
+                "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius.",
+                "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius.",
+                "The measure value for this control setting parameter.",
+                "The measure value for this operational parameter.",
+                "The measured value for this work item dimension.",
+                "The value of a measure for this calibrated measurement."
+            ],
+            "rdfs:label": "valueMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:ControlSetting_Parameter.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013510",
+                    "unece:cefactBieDomainClass": "cefact:ControlSetting_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure value for this control setting parameter."
+                },
+                {
+                    "@id": "cefact:Spatial_Dimension.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004076",
+                    "unece:cefactBieDomainClass": "cefact:Spatial_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the value of this spatial dimension."
+                },
+                {
+                    "@id": "cefact:WorkItem_Dimension.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01000058",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measured value for this work item dimension. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+                },
+                {
+                    "@id": "cefact:Calibrated_Measurement.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6314",
+                    "unece:cefactUNId": "UN01013536",
+                    "unece:cefactBieDomainClass": "cefact:Calibrated_Measurement.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The value of a measure for this calibrated measurement."
+                },
+                {
+                    "@id": "cefact:Operational_Parameter.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013521",
+                    "unece:cefactBieDomainClass": "cefact:Operational_Parameter.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure value for this operational parameter."
+                },
+                {
+                    "@id": "cefact:TransportSetting_Temperature.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6411",
+                    "unece:cefactUNId": "UN01004747",
+                    "unece:cefactBieDomainClass": "cefact:TransportSetting_Temperature.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
+                },
+                {
+                    "@id": "cefact:Communication_Event.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013567",
+                    "unece:cefactBieDomainClass": "cefact:Communication_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of a value for this communication event."
+                },
+                {
+                    "@id": "cefact:Monitoring_Sensor.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013543",
+                    "unece:cefactBieDomainClass": "cefact:Monitoring_Sensor.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the value for this monitoring sensor."
+                },
+                {
+                    "@id": "cefact:Product_Characteristic.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003975",
+                    "unece:cefactBieDomainClass": "cefact:Product_Characteristic.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A measure of a value for this product characteristic."
+                },
+                {
+                    "@id": "cefact:Transport_Event.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013583",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of a value for this transport event."
+                },
+                {
+                    "@id": "cefact:ProductCharacteristic_Condition.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01008315",
+                    "unece:cefactBieDomainClass": "cefact:ProductCharacteristic_Condition.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The measure of the value for this product characteristic condition."
+                },
+                {
+                    "@id": "cefact:Specified_Temperature.Value.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6411",
+                    "unece:cefactUNId": "UN01009044",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Temperature.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
+                }
+            ]
+        }
+    ]
+}

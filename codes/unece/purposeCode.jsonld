@@ -1,0 +1,58 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:purposeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:token"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Certificate"
+                },
+                {
+                    "@id": "unece:Period"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying the purpose of this product certificate.",
+                "The code specifying the purpose of this specified period."
+            ],
+            "rdfs:label": "purposeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_Period.Purpose.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01009047",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Period.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the purpose of this specified period."
+                },
+                {
+                    "@id": "cefact:Product_Certificate.Purpose.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01012494",
+                    "unece:cefactBieDomainClass": "cefact:Product_Certificate.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "A code specifying the purpose of this product certificate."
+                }
+            ]
+        }
+    ]
+}

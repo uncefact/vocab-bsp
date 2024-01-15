@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:TradeSettlementLineMonetarySummation",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A collection of monetary amount totals, specified at line level, for a trade settlement.",
+            "rdfs:label": "TradeSettlementLineMonetarySummation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementLine_MonetarySummation.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01011896",
+                    "rdfs:comment": "A collection of monetary amount totals, specified at line level, for a trade settlement.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

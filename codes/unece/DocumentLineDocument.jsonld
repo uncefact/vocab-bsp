@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:DocumentLineDocument",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
+            "rdfs:label": "DocumentLineDocument",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:DocumentLine_Document.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003513",
+                    "rdfs:comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:role",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ContactPerson"
+                },
+                {
+                    "@id": "unece:TradeParty"
+                },
+                {
+                    "@id": "unece:TransportPerson"
+                }
+            ],
+            "rdfs:comment": [
+                "A role, expressed as text, for this contact person.",
+                "A role, expressed as text, for this trade party.",
+                "A role, expressed as text, of this transport person."
+            ],
+            "rdfs:label": "role",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Person.Role.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004820",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A role, expressed as text, of this transport person."
+                },
+                {
+                    "@id": "cefact:Trade_Party.Role.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013115",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Party.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A role, expressed as text, for this trade party."
+                },
+                {
+                    "@id": "cefact:Contact_Person.Role.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013201",
+                    "unece:cefactBieDomainClass": "cefact:Contact_Person.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A role, expressed as text, for this contact person."
+                }
+            ]
+        }
+    ]
+}

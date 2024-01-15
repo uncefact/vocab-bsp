@@ -1,0 +1,102 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:includedTradeLineItem",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeLineItem"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:Package"
+                },
+                {
+                    "@id": "unece:ProductGroup"
+                },
+                {
+                    "@id": "unece:TradeLineItem"
+                },
+                {
+                    "@id": "unece:TradeTransaction"
+                }
+            ],
+            "rdfs:comment": [
+                "A subordinate trade line item included in this supply chain trade line item.",
+                "A supply chain trade line item included in this logistics package.",
+                "A supply chain trade line item which is included in this trade product group.",
+                "A trade line item included in this referenced supply chain consignment item.",
+                "A trade line item included in this supply chain consignment item.",
+                "A trade line item included in this supply chain trade transaction."
+            ],
+            "rdfs:label": "includedTradeLineItem",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_TradeLineItem.Included.Subordinate_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011866",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeLineItem.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A subordinate trade line item included in this supply chain trade line item."
+                },
+                {
+                    "@id": "cefact:Logistics_Package.Included.SupplyChain_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003706",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A supply chain trade line item included in this logistics package."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Included.SupplyChain_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004153",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A trade line item included in this supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Referenced_SupplyChain_ConsignmentItem.Included.SupplyChain_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011044",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A trade line item included in this referenced supply chain consignment item."
+                },
+                {
+                    "@id": "cefact:Trade_ProductGroup.Included.SupplyChain_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011925",
+                    "unece:cefactBieDomainClass": "cefact:Trade_ProductGroup.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "A supply chain trade line item which is included in this trade product group. Trade Line Item and Product are at the same level i.e. 1 for 1"
+                },
+                {
+                    "@id": "cefact:SupplyChain_TradeTransaction.Included.SupplyChain_TradeLineItem",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004480",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_TradeTransaction.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A trade line item included in this supply chain trade transaction."
+                }
+            ]
+        }
+    ]
+}

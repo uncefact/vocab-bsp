@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:DocumentStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "The information relevant to a condition related to a document.",
+            "rdfs:label": "DocumentStatus",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Document_Status.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01013122",
+                    "rdfs:comment": "The information relevant to a condition related to a document.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

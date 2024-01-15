@@ -1,0 +1,98 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:locationFunctionTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "unece:UNECECL3227Code"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:CountrySubDivision"
+                },
+                {
+                    "@id": "unece:LogisticsLocation"
+                },
+                {
+                    "@id": "unece:SubordinateLocation"
+                },
+                {
+                    "@id": "unece:SubordinateSubordinateLocation"
+                },
+                {
+                    "@id": "unece:TransportServiceLocation"
+                }
+            ],
+            "rdfs:comment": [
+                "A code specifying the type of this logistics related location.",
+                "A code specifying the type of transport service location.",
+                "The code specifying the function type of this trade country sub-division.",
+                "The code specifying the type of subordinate location.",
+                "The code specifying the type of subordinate of a subordinate location."
+            ],
+            "rdfs:label": "locationFunctionTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SubordinateSubordinate_Location.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3227",
+                    "unece:cefactUNId": "UN01004090",
+                    "unece:cefactBieDomainClass": "cefact:SubordinateSubordinate_Location.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of subordinate of a subordinate location."
+                },
+                {
+                    "@id": "cefact:Trade_CountrySub-Division.Function_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3227",
+                    "unece:cefactUNId": "UN01002565",
+                    "unece:cefactBieDomainClass": "cefact:Trade_CountrySubDivision.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the function type of this trade country sub-division."
+                },
+                {
+                    "@id": "cefact:Subordinate_Location.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3227",
+                    "unece:cefactUNId": "UN01004095",
+                    "unece:cefactBieDomainClass": "cefact:Subordinate_Location.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of subordinate location."
+                },
+                {
+                    "@id": "cefact:Logistics_Location.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3227",
+                    "unece:cefactUNId": "UN01003682",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Location.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A code specifying the type of this logistics related location."
+                },
+                {
+                    "@id": "cefact:TransportService_Location.Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "3227",
+                    "unece:cefactUNId": "UN01010089",
+                    "unece:cefactBieDomainClass": "cefact:TransportService_Location.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A code specifying the type of transport service location."
+                }
+            ]
+        }
+    ]
+}

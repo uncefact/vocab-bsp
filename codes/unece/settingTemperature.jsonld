@@ -1,0 +1,52 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:settingTemperature",
+            "schema:rangeIncludes": {
+                "@id": "unece:TransportSettingTemperature"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LogisticsTransportEquipment"
+            },
+            "rdfs:comment": [
+                "A temperature setting for this piece of logistics transport equipment, such as storage temperature or operational temperature.",
+                "A temperature setting for this piece of referenced logistics transport equipment, such as storage temperature or operational temperature."
+            ],
+            "rdfs:label": "settingTemperature",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.Setting.TransportSetting_Temperature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013181",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A temperature setting for this piece of referenced logistics transport equipment, such as storage temperature or operational temperature."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Setting.TransportSetting_Temperature",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01003800",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A temperature setting for this piece of logistics transport equipment, such as storage temperature or operational temperature."
+                }
+            ]
+        }
+    ]
+}

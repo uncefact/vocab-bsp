@@ -1,0 +1,118 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:unitQuantity",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AttachedTransportEquipment"
+                },
+                {
+                    "@id": "unece:CommunicationEvent"
+                },
+                {
+                    "@id": "unece:LogisticsTransportEquipment"
+                },
+                {
+                    "@id": "unece:Product"
+                },
+                {
+                    "@id": "unece:SupplyChainEvent"
+                },
+                {
+                    "@id": "unece:TransportEvent"
+                }
+            ],
+            "rdfs:comment": [
+                "A number of units for this supply chain event.",
+                "A unit quantity of this referenced product.",
+                "The number of units for this communication event.",
+                "The number of units for this transport event.",
+                "The number of units of attached transport equipment.",
+                "The number of units of this type of logistics transport equipment.",
+                "The number of units of this type of referenced logistics transport equipment."
+            ],
+            "rdfs:label": "unitQuantity",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportEquipment.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6350",
+                    "unece:cefactUNId": "UN01008981",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of units of this type of logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:SupplyChain_Event.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01004297",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A number of units for this supply chain event."
+                },
+                {
+                    "@id": "cefact:Referenced_Logistics_TransportEquipment.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6350",
+                    "unece:cefactUNId": "UN01008992",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Logistics_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of units of this type of referenced logistics transport equipment."
+                },
+                {
+                    "@id": "cefact:Communication_Event.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01013565",
+                    "unece:cefactBieDomainClass": "cefact:Communication_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The number of units for this communication event."
+                },
+                {
+                    "@id": "cefact:Referenced_Product.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01007191",
+                    "unece:cefactBieDomainClass": "cefact:Referenced_Product.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A unit quantity of this referenced product."
+                },
+                {
+                    "@id": "cefact:Attached_TransportEquipment.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "6350",
+                    "unece:cefactUNId": "UN01008955",
+                    "unece:cefactBieDomainClass": "cefact:Attached_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of units of attached transport equipment."
+                },
+                {
+                    "@id": "cefact:Transport_Event.Unit.Quantity",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01006146",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The number of units for this transport event."
+                }
+            ]
+        }
+    ]
+}

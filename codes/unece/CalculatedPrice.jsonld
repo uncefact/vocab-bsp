@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:CalculatedPrice",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Information related to a calculated price.",
+            "rdfs:label": "CalculatedPrice",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Calculated_Price.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01000179",
+                    "rdfs:comment": "Information related to a calculated price.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:coordinateDirectPosition",
+            "schema:rangeIncludes": {
+                "@id": "unece:DirectPosition"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:LinearRing"
+            },
+            "rdfs:comment": "The specified direct position of a coordinate for this linear ring.",
+            "rdfs:label": "coordinateDirectPosition",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_LinearRing.Coordinate.Specified_DirectPosition",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010474",
+                    "unece:cefactBieDomainClass": "cefact:Specified_LinearRing.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The specified direct position of a coordinate for this linear ring."
+                }
+            ]
+        }
+    ]
+}

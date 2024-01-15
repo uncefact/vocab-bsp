@@ -1,0 +1,33 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:Adjustment",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A correction or modification to reflect actual conditions.",
+            "rdfs:label": "Adjustment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Financial_Adjustment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003594",
+                    "rdfs:comment": "A correction or modification to reflect actual financial conditions.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                },
+                {
+                    "@id": "cefact:Delivery_Adjustment.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003498",
+                    "rdfs:comment": "A correction or modification to reflect actual delivery conditions.",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay"
+                }
+            ]
+        }
+    ]
+}

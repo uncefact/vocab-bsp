@@ -1,0 +1,111 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:specifiedInstructions",
+            "schema:rangeIncludes": {
+                "@id": "unece:DeliveryInstructions"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:HeaderTradeDelivery"
+                },
+                {
+                    "@id": "unece:LineTradeDelivery"
+                },
+                {
+                    "@id": "unece:TransportEvent"
+                },
+                {
+                    "@id": "unece:TransportMeans"
+                },
+                {
+                    "@id": "unece:TransportMovement"
+                }
+            ],
+            "rdfs:comment": [
+                "An instruction or a set of instructions specified for this transport event.",
+                "Delivery instructions, at header level, specified for this trade delivery.",
+                "Delivery instructions, at line level, specified for this trade delivery.",
+                "Handling instructions specified for this logistics means of transport.",
+                "Handling instructions specified for this logistics transport movement.",
+                "Handling instructions, at header level, specified for this trade delivery.",
+                "Handling instructions, at line level, specified for this trade delivery."
+            ],
+            "rdfs:label": "specifiedInstructions",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_TransportMovement.Specified.Handling_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010132",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMovement.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "Handling instructions specified for this logistics transport movement."
+                },
+                {
+                    "@id": "cefact:Logistics_TransportMeans.Specified.Handling_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010112",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_TransportMeans.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "Handling instructions specified for this logistics means of transport."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Specified.Handling_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013428",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Handling instructions, at header level, specified for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.Specified.Handling_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011783",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "Handling instructions, at line level, specified for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Transport_Event.Specified.Transport_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01004802",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Event.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "An instruction or a set of instructions specified for this transport event."
+                },
+                {
+                    "@id": "cefact:Header_TradeDelivery.Specified.Delivery_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011621",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "Delivery instructions, at header level, specified for this trade delivery."
+                },
+                {
+                    "@id": "cefact:Line_TradeDelivery.Specified.Delivery_Instructions",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011782",
+                    "unece:cefactBieDomainClass": "cefact:Line_TradeDelivery.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "Delivery instructions, at line level, specified for this trade delivery."
+                }
+            ]
+        }
+    ]
+}

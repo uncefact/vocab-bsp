@@ -1,0 +1,81 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:associatedDirectPositionList",
+            "schema:rangeIncludes": {
+                "@id": "unece:DirectPositionList"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GeographicalLine"
+                },
+                {
+                    "@id": "unece:GeographicalMultiCurve"
+                },
+                {
+                    "@id": "unece:GeographicalMultiPoint"
+                },
+                {
+                    "@id": "unece:GeographicalPoint"
+                }
+            ],
+            "rdfs:comment": [
+                "The direct position list associated with this geographical line.",
+                "The direct position list associated with this geographical multi-curve.",
+                "The direct position list associated with this geographical multi-point.",
+                "The direct position list associated with this geographical point."
+            ],
+            "rdfs:label": "associatedDirectPositionList",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_GeographicalLine.Associated.Specified_DirectPositionList",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012188",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalLine.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The direct position list associated with this geographical line."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Point.Associated.Specified_DirectPositionList",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012184",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalMultiPoint.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The direct position list associated with this geographical multi-point."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalMulti-Curve.Associated.Specified_DirectPositionList",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012191",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalMultiCurve.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The direct position list associated with this geographical multi-curve."
+                },
+                {
+                    "@id": "cefact:Specified_GeographicalPoint.Associated.Specified_DirectPositionList",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012181",
+                    "unece:cefactBieDomainClass": "cefact:Specified_GeographicalPoint.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "The direct position list associated with this geographical point."
+                }
+            ]
+        }
+    ]
+}

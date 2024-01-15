@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:valueBinaryFile",
+            "schema:rangeIncludes": {
+                "@id": "unece:BinaryFile"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Characteristic"
+            },
+            "rdfs:comment": "The value for this product characteristic expressed in a binary file.",
+            "rdfs:label": "valueBinaryFile",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Product_Characteristic.Value.Specified_BinaryFile",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008307",
+                    "unece:cefactBieDomainClass": "cefact:Product_Characteristic.Details",
+                    "unece:cefactBusinessProcess": "Supply Chain",
+                    "rdfs:comment": "The value for this product characteristic expressed in a binary file."
+                }
+            ]
+        }
+    ]
+}

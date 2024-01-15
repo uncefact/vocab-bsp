@@ -1,0 +1,69 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:applicableCustomsValuation",
+            "schema:rangeIncludes": {
+                "@id": "unece:CustomsValuation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Consignment"
+                },
+                {
+                    "@id": "unece:ConsignmentItem"
+                },
+                {
+                    "@id": "unece:Declaration"
+                }
+            ],
+            "rdfs:comment": [
+                "A cross-border customs valuation applicable to this supply chain consignment.",
+                "A customs valuation applicable to this supply chain consignment item.",
+                "Customs valuation information applicable to this exchanged declaration."
+            ],
+            "rdfs:label": "applicableCustomsValuation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:SupplyChain_Consignment.Applicable.Cross-Border_CustomsValuation",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01009002",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_Consignment.Details",
+                    "unece:cefactBusinessProcess": "Cross-Border",
+                    "rdfs:comment": "A cross-border customs valuation applicable to this supply chain consignment."
+                },
+                {
+                    "@id": "cefact:Exchanged_Declaration.Applicable.Cross-Border_CustomsValuation",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011023",
+                    "unece:cefactBieDomainClass": "cefact:Exchanged_Declaration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "Customs valuation information applicable to this exchanged declaration."
+                },
+                {
+                    "@id": "cefact:SupplyChain_ConsignmentItem.Applicable.Cross-Border_CustomsValuation",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01008998",
+                    "unece:cefactBieDomainClass": "cefact:SupplyChain_ConsignmentItem.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A customs valuation applicable to this supply chain consignment item."
+                }
+            ]
+        }
+    ]
+}

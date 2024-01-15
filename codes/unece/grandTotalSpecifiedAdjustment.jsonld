@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:grandTotalSpecifiedAdjustment",
+            "schema:rangeIncludes": {
+                "@id": "unece:Adjustment"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeSettlementHeaderMonetarySummation"
+            },
+            "rdfs:comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation.",
+            "rdfs:label": "grandTotalSpecifiedAdjustment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:TradeSettlementHeader_MonetarySummation.GrandTotal_Specified.Financial_Adjustment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01013299",
+                    "unece:cefactBieDomainClass": "cefact:TradeSettlementHeader_MonetarySummation.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
+                }
+            ]
+        }
+    ]
+}

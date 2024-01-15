@@ -1,0 +1,59 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "unece:cefactBieDomainClass": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "unece:lastRegisteredYearDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:dateTime"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GovernmentRegistration"
+                },
+                {
+                    "@id": "unece:LegalRegistration"
+                }
+            ],
+            "rdfs:comment": [
+                "The last registered year of this government registration.",
+                "The last year in which this legal registration was registered."
+            ],
+            "rdfs:label": "lastRegisteredYearDateTime",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Legal_Registration.LastRegisteredYear.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:cefactUNId": "UN01003656",
+                    "unece:cefactBieDomainClass": "cefact:Legal_Registration.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The last year in which this legal registration was registered."
+                },
+                {
+                    "@id": "cefact:Government_Registration.LastRegisteredYear.DateTime",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2379",
+                    "unece:cefactUNId": "UN01011035",
+                    "unece:cefactBieDomainClass": "cefact:Government_Registration.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The last registered year of this government registration."
+                }
+            ]
+        }
+    ]
+}

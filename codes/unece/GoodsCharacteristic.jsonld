@@ -1,0 +1,26 @@
+
+{
+    "@context": {
+        "unece": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/unece#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "cefact": "https://dmvc7xzscpizo.cloudfront.net/trade/uncefact/vocabulary/cefact#"
+    },
+    "@graph": [
+        {
+            "@id": "unece:GoodsCharacteristic",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "A distinguishing feature or quality of goods.",
+            "rdfs:label": "GoodsCharacteristic",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Material_GoodsCharacteristic.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01003884",
+                    "rdfs:comment": "A distinctive feature of a material contained within physical goods.",
+                    "unece:cefactBusinessProcess": "In All Contexts"
+                }
+            ]
+        }
+    ]
+}
